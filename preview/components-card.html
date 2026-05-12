@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:var(--bg-secondary); font-family:var(--font-body); display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .card { background:#fff; border:1px solid var(--border); border-radius:10px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,.05); transition:all .4s var(--ease); }
+  .card-img { aspect-ratio:16/10; background:#ddd center/cover no-repeat; position:relative; }
+  .card-img.b1 { background-image:url("../assets/branches/cn1.jpg"); }
+  .card-img.b2 { background-image:url("../assets/branches/cn2.jpg"); }
+  .chip { position:absolute; top:10px; right:10px; background:rgba(255,255,255,.92); backdrop-filter:blur(4px); padding:3px 10px; border-radius:9999px; font-size:10px; font-weight:700; letter-spacing:.05em; color:var(--text-primary); }
+  .card-body { padding:14px 14px 18px; }
+  .h3 { font-family:var(--font-display); font-weight:500; letter-spacing:.03em; font-size:18px; color:var(--text-primary); margin:0 0 6px; }
+  .p { font-family:var(--font-body); font-size:12px; color:var(--text-muted); line-height:1.6; }
+  .card.hover { border-color:rgba(185,28,28,.28); box-shadow:0 22px 54px rgba(26,26,24,.12), 0 0 0 1px rgba(185,28,28,.1); transform:translateY(-6px); }
+  .meta { margin-top:8px; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+</style></head>
+<body>
+  <div class="card">
+    <div class="card-img b1"><span class="chip">CS 1</span></div>
+    <div class="card-body">
+      <h3 class="h3">Resting card</h3>
+      <p class="p">1px border · 10px radius · soft shadow · 0.4s ease.</p>
+      <div class="meta">Default state →</div>
+    </div>
+  </div>
+  <div class="card hover">
+    <div class="card-img b2"><span class="chip">CS 2</span></div>
+    <div class="card-body">
+      <h3 class="h3">Hovered card</h3>
+      <p class="p">Lifts 6px · crimson 1px ring · 54px shadow under warm tint.</p>
+      <div class="meta">Hover state ↑</div>
+    </div>
+  </div>
+</body></html>

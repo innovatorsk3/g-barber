@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:var(--bg-primary); font-family:var(--font-body); display:flex; flex-direction:column; gap:12px; }
+  .panel { background:rgba(255,255,255,.97); backdrop-filter:blur(20px) saturate(160%); border-top:1px solid var(--border); height:60px; display:flex; align-items:center; justify-content:space-around; padding:0 16px; box-shadow:0 -2px 16px rgba(26,26,24,.05); border-radius:14px; }
+  .tab { display:flex; flex-direction:column; align-items:center; gap:2px; padding:6px 16px; color:var(--text-faint); position:relative; }
+  .tab.active { color:var(--accent); }
+  .tab.active::before { content:""; position:absolute; top:0; left:50%; transform:translateX(-50%); width:16px; height:2px; background:var(--accent); border-radius:1px; }
+  .icon { width:18px; height:18px; border:1.5px solid currentColor; border-radius:3px; }
+  .lbl  { font-size:9px; font-weight:600; letter-spacing:.04em; }
+  .call { background:var(--accent); color:#fff !important; border-radius:9999px; width:40px; height:40px; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(185,28,28,.3); }
+  .call .icon { border:none; background:#fff; mask:radial-gradient(circle, transparent 4px, #000 4.5px); width:14px; height:14px; }
+  .label { font-size:10px; color:var(--text-muted); letter-spacing:.1em; text-transform:uppercase; }
+</style></head>
+<body>
+  <div class="label">Mobile bottom nav · fixed, blurred</div>
+  <div class="panel">
+    <div class="tab active"><div class="icon"></div><div class="lbl">Trang Chủ</div></div>
+    <div class="tab"><div class="icon" style="border-radius:50%"></div><div class="lbl">Về Chúng Tôi</div></div>
+    <div class="tab call"><div class="icon"></div></div>
+  </div>
+</body></html>

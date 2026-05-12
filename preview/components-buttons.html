@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:24px; background:var(--bg-primary); font-family:var(--font-body); display:flex; flex-direction:column; gap:18px; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; height:48px; padding:0 28px; font-family:var(--font-body); font-weight:600; font-size:11px; letter-spacing:.15em; text-transform:uppercase; border:none; cursor:pointer; transition:all .3s var(--ease); border-radius:9999px; }
+  .btn-primary { background:var(--accent); color:var(--bg-primary); }
+  .btn-primary:hover { background:var(--accent-hover); transform:translateY(-2px); box-shadow:0 8px 28px rgba(185,28,28,0.4); }
+  .btn-outline { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .btn-outline:hover { background:rgba(185,28,28,0.08); transform:translateY(-2px); }
+  .btn-dark { background:#0F0E0D; color:#fff; }
+  .btn-sm { height:40px; padding:0 20px; font-size:10px; }
+  .row { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .lbl { font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--text-muted); width:80px; }
+</style></head>
+<body>
+  <div class="row"><div class="lbl">Primary</div><button class="btn btn-primary">ĐẶT LỊCH HẸN</button><button class="btn btn-primary btn-sm">GỌI NGAY</button></div>
+  <div class="row"><div class="lbl">Outline</div><button class="btn btn-outline">XEM BẢNG GIÁ</button><button class="btn btn-outline btn-sm">XEM BẢN ĐỒ →</button></div>
+  <div class="row"><div class="lbl">Dark</div><button class="btn btn-dark">↑</button><span style="font-size:11px;color:var(--text-muted)">Scroll-to-top floating action</span></div>
+</body></html>

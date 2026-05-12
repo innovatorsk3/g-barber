@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Dịch Vụ · G - Barbershop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="icon" href="assets/logo/logo_g.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { brand: { DEFAULT:"#B91C1C", 50:"#FDF2F2", 500:"#DC2626", 600:"#B91C1C", 700:"#991B1B", 800:"#7F1D1D", 900:"#5C1313" } },
+      fontFamily: { display:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] },
+      boxShadow: { 'brand-glow':'0 18px 40px -12px rgba(185,28,28,.55)', 'card-lift':'0 22px 60px -22px rgba(0,0,0,.7)' },
+    }}};
+  </script>
+  <style>
+    html,body { background:#18181B; }
+    body { font-family:Inter,system-ui,sans-serif; color:#FAFAFA; -webkit-font-smoothing:antialiased; }
+    .font-display { font-family:"Playfair Display",Georgia,serif; }
+    .grain::before { content:""; position:absolute; inset:0; pointer-events:none;
+      background-image:url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"); mix-blend-mode:overlay; opacity:.5; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(18px) } to { opacity:1; transform:none } }
+    .anim-up { animation: fadeUp .7s cubic-bezier(.22,1,.36,1) both; }
+    .hairline { background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent); height:1px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" data-presets="env,react" src="_shared.jsx"></script>
+  <script type="text/babel" data-presets="env,react">
+    const SERVICES = [
+      { tag:"Best seller", name:"Combo G - Tiêu Chuẩn", price:"159K", time:"45'", img:"assets/gallery/3.jpg",
+        desc:"Cắt tóc tiêu chuẩn · gội đầu thư giãn · tạo kiểu hoàn thiện. Phù hợp dân văn phòng cần một look gọn gàng, chỉn chu hằng tuần.",
+        includes:["Tư vấn kiểu tóc theo khuôn mặt","Cắt + tỉa chi tiết bằng kéo & tông đơ","Gội đầu thảo dược + massage 10'","Sấy tạo kiểu với sáp/wax cao cấp"] },
+      { tag:"Signature", name:"Combo G - Cao Cấp", price:"259K", time:"75'", img:"assets/gallery/4.jpg",
+        desc:"Trải nghiệm hoàn chỉnh: cắt, cạo mặt cổ điển bằng dao thẳng, đắp mặt nóng-lạnh và massage cổ vai gáy.",
+        includes:["Cắt chuẩn signature G","Cạo mặt cổ điển bằng dao thẳng","Đắp khăn nóng-lạnh + tinh dầu","Massage cổ-vai-gáy 15'","Tạo kiểu bằng pomade nhập khẩu"] },
+      { tag:"Premium", name:"Combo G - Hoàng Gia", price:"459K", time:"110'", img:"assets/gallery/5.jpg",
+        desc:"Dành cho khách VIP. Phòng riêng, barber Master, đồ uống welcome, chăm sóc tóc & da mặt chuyên sâu.",
+        includes:["Phòng riêng + barber Master","Cắt + nhuộm/highlight cơ bản","Chăm sóc da mặt 3 bước","Cạo dao + massage 25'","Welcome drink + khăn ấm tinh dầu"] },
+      { tag:"Add-on", name:"Nhuộm Tóc Nam", price:"từ 399K", time:"90'", img:"assets/gallery/6.jpg",
+        desc:"Nhuộm phủ bạc, nhuộm thời trang, highlight. Sử dụng thuốc nhuộm cao cấp ít amoniac, dưỡng tóc đi kèm.",
+        includes:["Tư vấn màu hợp tông da","Test thuốc trước khi nhuộm","Dưỡng tóc sau nhuộm","Bảo hành màu 4 tuần"] },
+      { tag:"Add-on", name:"Uốn Định Hình", price:"từ 499K", time:"120'", img:"assets/branches/cn2.jpg",
+        desc:"Uốn gợn tự nhiên, uốn xoăn nhẹ, uốn texture. Tạo phong cách hiện đại, dễ tạo kiểu hằng ngày.",
+        includes:["Tư vấn kiểu uốn theo độ dài","Thuốc uốn nhập khẩu","Dưỡng phục hồi","Hướng dẫn cách giữ nếp"] },
+      { tag:"Kids", name:"Cắt Tóc Trẻ Em", price:"99K", time:"30'", img:"assets/branches/cn3.jpg",
+        desc:"Không gian thân thiện, barber kiên nhẫn với bé. Tặng kèm kẹo và sticker sau buổi cắt.",
+        includes:["Ghế chuyên dụng cho bé","Đồ chơi + iPad giải trí","Cắt nhẹ nhàng, an toàn","Quà tặng cuối buổi"] },
+    ];
+
+    const Tag = ({ t }) => {
+      const map = { "Best seller":"bg-amber-400/15 text-amber-300 border-amber-400/30", "Signature":"bg-brand/15 text-brand border-brand/30",
+        "Premium":"bg-fuchsia-400/15 text-fuchsia-300 border-fuchsia-400/30", "Add-on":"bg-white/5 text-zinc-300 border-white/20", "Kids":"bg-sky-400/15 text-sky-300 border-sky-400/30" };
+      return <span className={`inline-flex items-center text-[9px] font-semibold tracking-[0.2em] uppercase px-2.5 py-1 rounded-full border ${map[t]||"bg-white/5 text-zinc-300 border-white/20"}`}>{t}</span>;
+    };
+
+    const ServiceCard = ({ s, i }) => (
+      <article className="anim-up group relative grid md:grid-cols-12 gap-0 bg-zinc-800/50 border border-white/[0.06] rounded-2xl overflow-hidden hover:border-brand/40 transition-all duration-500" style={{ animationDelay: `${0.05+i*0.04}s` }}>
+        <div className="md:col-span-5 relative aspect-[4/3] md:aspect-auto overflow-hidden">
+          <div className="absolute inset-0 bg-cover bg-center transition-transform duration-[1.2s] group-hover:scale-105" style={{ backgroundImage:`url(${s.img})` }}></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-zinc-950/80 via-zinc-950/20 to-transparent md:bg-gradient-to-r"></div>
+          <div className="absolute top-4 left-4"><Tag t={s.tag}/></div>
+          <div className="absolute bottom-4 left-4 font-display text-brand text-2xl italic">0{i+1}</div>
+        </div>
+        <div className="md:col-span-7 p-6 sm:p-8 flex flex-col">
+          <div className="flex items-baseline justify-between gap-4">
+            <h3 className="font-display text-2xl sm:text-3xl text-zinc-50 leading-tight">{s.name}</h3>
+            <div className="text-right whitespace-nowrap">
+              <div className="font-display text-brand text-xl">{s.price}</div>
+              <div className="text-[10px] uppercase tracking-[0.18em] text-zinc-500 mt-0.5 flex items-center gap-1.5 justify-end"><Clock size={11}/> {s.time}</div>
+            </div>
+          </div>
+          <p className="mt-3 text-sm text-zinc-400 leading-relaxed">{s.desc}</p>
+          <ul className="mt-5 grid sm:grid-cols-2 gap-2.5">
+            {s.includes.map(inc => (
+              <li key={inc} className="flex items-start gap-2.5 text-[13px] text-zinc-300"><Check size={14} className="text-brand mt-0.5 flex-shrink-0"/>{inc}</li>
+            ))}
+          </ul>
+          <div className="mt-6 pt-5 border-t border-white/5 flex items-center justify-between gap-3">
+            <a href="tel:0947947168" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-zinc-400 hover:text-white"><Phone size={12}/> Tư vấn</a>
+            <Btn size="sm" variant="primary" icon={<ArrowUR size={13}/>}>Đặt lịch</Btn>
+          </div>
+        </div>
+      </article>
+    );
+
+    const App = () => (
+      <div className="min-h-screen">
+        <Header active="dichvu" onCta={() => window.location.href='tel:0947947168'}/>
+        <PageHero kicker="Dịch vụ · Pricelist 2026" title={<><span>Bảng Giá</span><span className="block italic font-light text-brand mt-1">Dịch Vụ G</span></>}
+          body="Mỗi dịch vụ tại G được thiết kế để mang đến không chỉ kiểu tóc đẹp — mà còn là trải nghiệm thư giãn, nam tính, chỉn chu. Mọi giá đã bao gồm gội đầu và tạo kiểu."
+          img="assets/gallery/5.jpg"/>
+
+        {/* Quick stats */}
+        <section className="px-5 sm:px-8 -mt-8 sm:-mt-10 relative z-10">
+          <div className="max-w-5xl mx-auto grid grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/10">
+            {[{n:"6+",l:"Dịch vụ chính"},{n:"30–120'",l:"Thời lượng"},{n:"99K–459K",l:"Tầm giá"}].map(s => (
+              <div key={s.l} className="bg-zinc-900 px-4 py-5 sm:px-6 sm:py-6 text-center">
+                <div className="font-display text-2xl sm:text-3xl text-brand">{s.n}</div>
+                <div className="mt-1 text-[10px] uppercase tracking-[0.18em] text-zinc-500">{s.l}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="px-5 sm:px-8 py-16 sm:py-24">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-10 sm:mb-14">
+              <SectionLabel kicker="Combo chính" title={<>Chọn gói phù hợp <span className="italic font-light text-brand">với bạn</span></>}
+                body="Combo G bao gồm dịch vụ chính + gội đầu + tạo kiểu. Add-on có thể cộng thêm vào bất kỳ combo nào."/>
+            </div>
+            <div className="grid gap-5 sm:gap-6">
+              {SERVICES.map((s,i) => <ServiceCard key={s.name} s={s} i={i}/>)}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ-ish bottom band */}
+        <section className="bg-zinc-900 border-y border-white/5 px-5 sm:px-8 py-16">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+            {[
+              { k:"Có cần đặt lịch?", v:"Có thể walk-in nhưng cuối tuần thường kín. Đặt trước qua hotline 0947 947 168 hoặc Zalo." },
+              { k:"Thanh toán?", v:"Tiền mặt, chuyển khoản, thẻ ATM/Visa. Có chương trình membership tích điểm." },
+              { k:"Bảo hành?", v:"Cắt — không vừa ý quay lại sửa miễn phí trong 7 ngày. Nhuộm bảo hành màu 4 tuần." },
+            ].map(f => (
+              <div key={f.k}>
+                <div className="text-[10px] uppercase tracking-[0.28em] text-brand font-semibold mb-2.5">{f.k}</div>
+                <p className="text-sm text-zinc-300 leading-relaxed">{f.v}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <Footer/>
+        <BottomNav active="dichvu" onCta={() => window.location.href='tel:0947947168'}/>
+      </div>
+    );
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+  </script>
+</body>
+</html>

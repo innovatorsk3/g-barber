@@ -1,0 +1,157 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   G - BARBERSHOP — Colors & Type Foundations
+   Warm Cream + Charcoal + Crimson · Oswald display / Inter body
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* ─── Backgrounds ──────────────────────────────────────────────── */
+  --bg-primary:    #FAF8F5;   /* warm cream — page bg */
+  --bg-secondary:  #F3EEE8;   /* darker cream — alt sections */
+  --bg-card:       #FFFFFF;
+  --bg-elevated:   #FFFFFF;
+  --bg-dark:       #0F0E0D;   /* near-black — footer / dark sections */
+  --bg-dark-2:     #1A1714;   /* slightly lifted dark */
+
+  /* ─── Text ─────────────────────────────────────────────────────── */
+  --text-primary:  #1C1410;
+  --text-secondary:#3D3530;
+  --text-muted:    #6B6058;
+  --text-faint:    #9C9188;
+  --text-on-dark:  rgba(255,255,255,0.95);
+  --text-on-dark-2:rgba(255,255,255,0.78);
+  --text-on-dark-3:rgba(255,255,255,0.55);
+
+  /* ─── Accent (signature crimson + supporting gold) ─────────────── */
+  --accent:        #b91c1c;
+  --accent-hover:  #991b1b;
+  --accent-dark:   #7f1d1d;
+  --accent-light:  rgba(185, 28, 28, 0.09);
+  --accent-gold:   #C49A2A;   /* used for star ratings & subtle inflections */
+
+  /* ─── Borders ──────────────────────────────────────────────────── */
+  --border:        #E8E3DC;
+  --border-hover:  #D4CDBF;
+  --border-dark:   rgba(255,255,255,0.08);
+
+  /* ─── Radii ────────────────────────────────────────────────────── */
+  --radius-sm:     6px;
+  --radius:        10px;
+  --radius-lg:     16px;
+  --radius-full:   9999px;
+
+  /* ─── Shadows ──────────────────────────────────────────────────── */
+  --shadow-sm:     0 2px 8px rgba(0,0,0,0.03);
+  --shadow:        0 4px 16px rgba(0,0,0,0.05);
+  --shadow-md:     0 10px 40px rgba(0,0,0,0.1);
+  --shadow-lg:     0 22px 54px rgba(26,26,24,0.12), 0 0 0 1px rgba(185,28,28,0.1);
+  --shadow-cta:    0 8px 28px rgba(185,28,28,0.4);
+  --shadow-dark:   0 4px 24px rgba(0,0,0,0.4);
+
+  /* ─── Motion ───────────────────────────────────────────────────── */
+  --ease:          cubic-bezier(0.4, 0, 0.2, 1);
+  --transition:    0.3s var(--ease);
+  --transition-slow: 0.6s var(--ease);
+
+  /* ─── Spacing ──────────────────────────────────────────────────── */
+  --container-px:  16px;
+  --section-py:    clamp(3rem, 8vw, 7rem);
+  --container-max: 1200px;
+
+  /* ─── Fonts ────────────────────────────────────────────────────── */
+  --font-display:  "Oswald", "Arial Narrow", sans-serif;
+  --font-body:     "Inter", "Helvetica Neue", system-ui, sans-serif;
+}
+
+@media (min-width: 640px)  { :root { --container-px: 24px; } }
+@media (min-width: 768px)  { :root { --container-px: 40px; } }
+@media (min-width: 1280px) { :root { --container-px: 60px; } }
+
+
+/* ─── Type primitives ────────────────────────────────────────────── */
+/* Display family: Oswald — UPPERCASE, condensed, heavy letter-spacing.
+   Body family: Inter — normal case, generous line-height (1.7), softer color. */
+
+.t-display {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 10vw, 7rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.t-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.t-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.t-h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.t-label {
+  /* The "tag" / eyebrow / accent caption — always crimson, always tracked-out. */
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.t-body {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+.t-caption {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ─── Semantic shortcuts ─────────────────────────────────────────── */
+h1 { font-family: var(--font-display); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; line-height: 1.1; }
+h2 { font-family: var(--font-display); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.15; }
+h3 { font-family: var(--font-display); font-weight: 500; letter-spacing: 0.03em; line-height: 1.2; }
+p  { font-family: var(--font-body); line-height: 1.7; color: var(--text-secondary); }
+code, pre, kbd {
+  font-family: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  font-size: 0.875em;
+}
+
+/* ─── Accent decorations ─────────────────────────────────────────── */
+.accent { color: var(--accent); }
+.accent-line {
+  width: 40px; height: 2px;
+  background: var(--accent);
+  display: block;
+}
+.accent-line-center {
+  width: 40px; height: 2px;
+  background: var(--accent);
+  display: block;
+  margin: 0 auto;
+}
+
+/* ─── Selection ──────────────────────────────────────────────────── */
+::selection { background: rgba(185, 28, 28, 0.25); color: var(--text-primary); }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:var(--bg-primary); font-family:var(--font-body); }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .c { background:#fff; border:1px solid var(--border); border-radius:10px; height:96px; display:flex; align-items:flex-end; justify-content:center; padding:10px; }
+  .c1 { box-shadow:0 2px 8px rgba(0,0,0,0.03); }
+  .c2 { box-shadow:0 4px 16px rgba(0,0,0,0.05); }
+  .c3 { box-shadow:0 10px 40px rgba(0,0,0,0.1); }
+  .c4 { box-shadow:0 22px 54px rgba(26,26,24,0.12), 0 0 0 1px rgba(185,28,28,0.1); }
+  .c5 { box-shadow:0 8px 28px rgba(185,28,28,0.4); background:var(--accent); }
+  .c6 { box-shadow:0 4px 24px rgba(0,0,0,0.4); background:#1E1A17; border-color:rgba(255,255,255,0.08); }
+  .name { font-size:10px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--text-primary); }
+  .name-d { color:#fff; }
+  .meta { font-family:"JetBrains Mono",monospace; font-size:9px; color:var(--text-muted); }
+  .meta-d { color:rgba(255,255,255,.65); }
+  .lbl { display:flex; flex-direction:column; gap:2px; }
+</style></head>
+<body>
+  <div class="grid">
+    <div class="c c1"><div class="lbl"><div class="name">shadow-sm</div><div class="meta">resting · mobile</div></div></div>
+    <div class="c c2"><div class="lbl"><div class="name">shadow</div><div class="meta">resting · desktop</div></div></div>
+    <div class="c c3"><div class="lbl"><div class="name">shadow-md</div><div class="meta">image well</div></div></div>
+    <div class="c c4"><div class="lbl"><div class="name">shadow-lg</div><div class="meta">hover · crimson ring</div></div></div>
+    <div class="c c5"><div class="lbl"><div class="name name-d">shadow-cta</div><div class="meta meta-d">button hover-lift</div></div></div>
+    <div class="c c6"><div class="lbl"><div class="name name-d">shadow-dark</div><div class="meta meta-d">card on bg-dark</div></div></div>
+  </div>
+</body></html>

@@ -1,0 +1,251 @@
+{
+  "hero": {
+    "tagline": "TÓC ĐẸP TỪ TÂM",
+    "heading": "G - BARBERSHOP",
+    "subheading": "",
+    "description": "G - Barbershop không chỉ là tiệm cắt tóc mà còn là nơi gặp gỡ và cùng trò chuyện. Chúng tôi kết hợp giữa phong cách cổ điển & hiện đại để bạn có được mái tóc đúng với ý mình nhất.",
+    "ctaText": "ĐẶT LỊCH HẸN",
+    "ctaUrl": "/lien-he",
+    "backgroundImage": "/assets/team/1.jpg",
+    "stats": []
+  },
+  "about": {
+    "tag": "Barbershop Chuyên Nghiệp",
+    "heading": "Uy Tín & Chuyên Nghiệp",
+    "description": "G - Barbershop là chuỗi tiệm cắt tóc nam chuyên nghiệp tại Bình Dương & TP.HCM. Với đội ngũ thợ giàu kinh nghiệm và nhiệt tình, cam kết mang lại những kiểu tóc hài lòng nhất cho các quý ông.",
+    "description2": "Chúng tôi kết hợp giữa phong cách cổ điển & hiện đại, mang đến không gian thân thiện, gần gũi nhưng không kém phần chuyên nghiệp.",
+    "image": "/images/about.jpg",
+    "stats": []
+  },
+  "services": {
+    "tag": "Dịch Vụ",
+    "heading": "Dịch Vụ Của Chúng Tôi",
+    "description": "G - Barbershop cung cấp đầy đủ các dịch vụ chăm sóc tóc nam chuyên nghiệp, từ cắt tóc, uốn, nhuộm đến tẩy tóc và ép side.",
+    "categories": [
+      {
+        "icon": "✂️",
+        "title": "Cắt Tóc – Combo",
+        "description": "Combo Cắt-Xả-Tạo Kiểu từ 40K. Bao gồm cắt trẻ em, cắt HS, và Gói Phục Hồi chuyên sâu.",
+        "image": "/images/service-cut.jpg"
+      },
+      {
+        "icon": "🔥",
+        "title": "Uốn Tóc",
+        "description": "Uốn SidePart, Layer, Curlys Hair, Ruffled, CurlyS, Premlock, Buddha Perm. Có gói thường & gói tốt + phục hồi.",
+        "image": "/images/service-perm.jpg"
+      },
+      {
+        "icon": "🎨",
+        "title": "Nhuộm – Tẩy Tóc",
+        "description": "Nhuộm 1 lần, nâng tông, nhuộm đen tóc bạc/màu. Tẩy tóc 1-2 lần + nhuộm, tẩy nối, nhuộm Bạch Kim.",
+        "image": "/images/service-color.jpg"
+      },
+      {
+        "icon": "💇",
+        "title": "Duỗi – Ép Side",
+        "description": "Duỗi tóc uốn, duỗi thường, duỗi Cup Setting. Ép Side, ép ngôi, ép gáy chuyên nghiệp.",
+        "image": "/images/service-straight.jpg"
+      },
+      {
+        "icon": "💆",
+        "title": "Dịch Vụ Chăm Sóc",
+        "description": "Cạo mặt, lột mụn, ráy tai – các dịch vụ chăm sóc giúp bạn thư giãn thoải mái nhất.",
+        "image": "/images/service-care.jpg"
+      }
+    ]
+  },
+  "pricing": {
+    "tag": "Bảng Giá",
+    "heading": "Bảng Giá Dịch Vụ",
+    "description": "Giá cả minh bạch, phù hợp cho mọi đối tượng.",
+    "image": "/assets/price/price.jpg",
+    "categories": [
+      {
+        "name": "Combo – Gói",
+        "items": [
+          { "service": "Combo: Cắt-Xả-Tạo Kiểu", "price": "60K" },
+          { "service": "Combo SV năm 1: Cắt-Xả-Tạo Kiểu", "price": "40K" },
+          { "service": "Combo SV năm 2: Cắt-Xả-Tạo Kiểu", "price": "50K" },
+          { "service": "Cắt Trẻ em", "price": "20 - 30K" },
+          { "service": "Cắt HS Cấp 1", "price": "50K" },
+          { "service": "Gói Phục Hồi", "price": "100K" }
+        ]
+      },
+      {
+        "name": "Uốn Tóc – Gói Thường",
+        "items": [
+          { "service": "Uốn SidePart, Layer", "price": "250K" },
+          { "service": "Uốn Curlys Hair, Layer Textured,...", "price": "300K" },
+          { "service": "Uốn Ruffled, CurlyS", "price": "350K" },
+          { "service": "Uốn Premlock", "price": "550K" },
+          { "service": "Buddha Perm", "price": "500K" }
+        ]
+      },
+      {
+        "name": "Uốn Tóc – Gói Tốt + Phục Hồi",
+        "items": [
+          { "service": "Uốn SidePart, Layer", "price": "300K" },
+          { "service": "Uốn Curlys Hair, Layer Textured,...", "price": "350K" },
+          { "service": "Uốn Ruffled, CurlyS", "price": "400K" },
+          { "service": "Uốn Premlock", "price": "600K" },
+          { "service": "Buddha Perm", "price": "550K" }
+        ]
+      },
+      {
+        "name": "Duỗi Tóc",
+        "items": [
+          { "service": "Duỗi tóc uốn", "price": "70K" },
+          { "service": "Duỗi thường", "price": "350K" },
+          { "service": "Duỗi Cup Setting", "price": "450K" }
+        ]
+      },
+      {
+        "name": "Dịch Vụ Chăm Sóc",
+        "items": [
+          { "service": "Cạo mặt", "price": "20K" },
+          { "service": "Lột mụn", "price": "30K" },
+          { "service": "Ráy tai", "price": "40 - 50K" }
+        ]
+      },
+      {
+        "name": "Nhuộm Tóc – Gói Thường",
+        "items": [
+          { "service": "Nhuộm 1 lần", "price": "250K" },
+          { "service": "Nâng tông + nhuộm", "price": "450K" },
+          { "service": "Nhuộm đen tóc bạc", "price": "100K" },
+          { "service": "Nhuộm đen tóc màu", "price": "150K" }
+        ]
+      },
+      {
+        "name": "Nhuộm Tóc – Gói Tốt + Phục Hồi",
+        "items": [
+          { "service": "Nhuộm 1 lần", "price": "300K" },
+          { "service": "Nâng tông + nhuộm", "price": "500K" }
+        ]
+      },
+      {
+        "name": "Tẩy Tóc",
+        "items": [
+          { "service": "Tẩy 1 lần + Nhuộm", "price": "450K" },
+          { "service": "Tẩy 2 lần + Nhuộm", "price": "600K" },
+          { "service": "Tẩy + Nhuộm Bạch Kim", "price": "650 - 800K" },
+          { "service": "Tẩy nối 1 lần + Nhuộm", "price": "550K" },
+          { "service": "Tẩy nối 2 lần + Nhuộm", "price": "750K" }
+        ]
+      },
+      {
+        "name": "Ép Side",
+        "items": [
+          { "service": "Ép Side", "price": "250K" },
+          { "service": "Ép ngôi", "price": "100K" },
+          { "service": "Ép Gáy", "price": "150K" }
+        ]
+      }
+    ]
+  },
+  "history": {
+    "tag": "Tiểu Sử Doanh Nghiệp",
+    "heading": "Hành Trình Phát Triển",
+    "milestones": [
+      {
+        "year": "2021",
+        "title": "Khởi Đầu Hành Trình",
+        "description": "Khởi đầu vào năm 2021, doanh nghiệp chính thức khai trương chi nhánh đầu tiên tại 135 Lương Đình Của, Đông Hoà, Dĩ An. Đây là cột mốc đánh dấu bước đi đầu tiên với nhiều hoài bão và khát vọng xây dựng thương hiệu vững mạnh. Tuy nhiên, ngay trong giai đoạn khởi nghiệp, hệ thống đã phải đối mặt với thử thách lớn khi ảnh hưởng từ COVID-19 khiến hoạt động kinh doanh gặp nhiều khó khăn. Dù vậy, bằng sự kiên trì và quyết tâm, hệ thống vẫn đứng vững và tiếp tục phát triển.",
+        "image": "/assets/branches/cn1.jpg"
+      },
+      {
+        "year": "2023",
+        "title": "Mở Rộng Quy Mô",
+        "description": "Sau quá trình ổn định và phục hồi mạnh mẽ, doanh nghiệp tiếp tục mở rộng quy mô với chi nhánh thứ hai tại 43 Đường Số 8, Linh Xuân, Thủ Đức. Đây là bước tiến quan trọng, khẳng định sự tăng trưởng ổn định và niềm tin của khách hàng dành cho thương hiệu.",
+        "image": "/assets/branches/cn2.jpg"
+      },
+      {
+        "year": "2024",
+        "title": "Vươn Tầm Phát Triển",
+        "description": "Chi nhánh thứ ba chính thức được khai trương tại 10/5 Nguyễn Hiền, Đông Hòa, Dĩ An. Việc liên tục mở rộng hệ thống không chỉ thể hiện tầm nhìn dài hạn mà còn là minh chứng cho uy tín, chất lượng dịch vụ và sự đồng hành của quý khách hàng trong suốt chặng đường phát triển.",
+        "image": "/assets/branches/cn3.jpg"
+      }
+    ],
+    "closing": "Từ một chi nhánh đầu tiên đầy thử thách đến hệ thống 3 chi nhánh hôm nay, G - Barbershop luôn giữ vững tinh thần không ngừng nâng cao chất lượng – lấy khách hàng làm trung tâm – phát triển bền vững."
+  },
+  "team": {
+    "tag": "Đội Ngũ Barber",
+    "heading": "Tâm & Tài",
+    "description": "Là những người thợ có Tâm & được đào tạo bài bản, luôn mang đến cho bạn trải nghiệm tốt nhất.",
+    "members": [
+      { "name": "Master Minh", "role": "Senior Barber", "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
+      { "name": "Barber Hoàng", "role": "Head Stylist", "image": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80" },
+      { "name": "Barber Đức", "role": "Color Specialist", "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
+      { "name": "Barber Tú", "role": "Perm Expert", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" }
+    ],
+    "testimonials": [
+      {
+        "name": "Lê Thanh Tùng",
+        "text": "Không gian đẹp, thợ cắt tỉ mỉ. Nói chung không có gì có thể phàn nàn tại G - Barbershop.",
+        "rating": 5
+      },
+      {
+        "name": "Nguyễn Hải Nam",
+        "text": "Kiểu tóc cắt bởi G - Barbershop luôn luôn là kiểu tóc mình ưng ý nhất. Chuyên nghiệp nhưng không hề \"công nghiệp\".",
+        "rating": 5
+      },
+      {
+        "name": "Trần Minh Quân",
+        "text": "Đi cắt ở nhiều nơi nhưng chưa đâu tỉ mỉ và chuyên nghiệp như G - Barbershop. Sẽ quay lại lần nữa!",
+        "rating": 5
+      }
+    ]
+  },
+  "gallery": {
+    "tag": "Hình Ảnh",
+    "heading": "Kiểu Tóc Thịnh Hành",
+    "description": "Khám phá những mẫu tóc mới nhất & đang thịnh hành.",
+    "images": [
+      { "src": "/assets/gallery/3.jpg", "label": "Classic Pompadour" },
+      { "src": "/assets/gallery/4.jpg", "label": "Undercut" },
+      { "src": "/assets/gallery/5.jpg", "label": "Korean Perm" },
+      { "src": "/assets/gallery/6.jpg", "label": "Side Part" }
+    ]
+  },
+  "branches": {
+    "tag": "Các Chi Nhánh",
+    "heading": "Hệ Thống Chi Nhánh",
+    "description": "Bạn hãy chọn cho mình địa chỉ gần nhất nhé!",
+    "items": [
+      {
+        "id": 1,
+        "name": "G - Barbershop Lương Đình Của",
+        "address": "135 Lương Đình Của, Đông Hoà, Dĩ An, Bình Dương",
+        "phone": "0947 947 168",
+        "hours": "8:00 – 21:00",
+        "mapUrl": "https://www.google.com/maps/place/G+-+Barber+Shop/@10.8861269,106.7626899,15z/data=!4m10!1m2!2m1!1sg+barber!3m6!1s0x3174d9a8e62b7473:0x3acc77771aa42daf!8m2!3d10.8861269!4d106.7817443!15sCghnIGJhcmJlcloKIghnIGJhcmJlcpIBC2JhcmJlcl9zaG9wmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDI1d2RWUnJlRVJXTWtweVZGUmFUMUZyYUZoVFJFWklUa1pXZDJOdVl4QULgAQD6AQQIABAX!16s%2Fg%2F11r96v13db?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D",
+        "image": "/assets/branches/cn1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "G - Barbershop Linh Xuân",
+        "address": "43 Đường Số 8, Linh Xuân, Thủ Đức, TP.HCM",
+        "phone": "0947 947 168",
+        "hours": "8:00 – 21:00",
+        "mapUrl": "https://www.google.com/maps/place/G+-+Barbershop+2/@10.8861269,106.7626899,15z/data=!4m10!1m2!2m1!1sg+barber!3m6!1s0x3174d97edc6519d1:0x89ca331ebc48dd75!8m2!3d10.8801763!4d106.7738977!15sCghnIGJhcmJlcloKIghnIGJhcmJlcpIBC2JhcmJlcl9zaG9wmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ4a05GUlhVblpoYWxadFUxZE9UMDFyVmxwYWJYQXhZakZPTWxWSFl4QULgAQD6AQQIABAd!16s%2Fg%2F11v3mz00hw?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D",
+        "image": "/assets/branches/cn2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "G - Barbershop Nguyễn Hiền",
+        "address": "10/5 Nguyễn Hiền, Đông Hòa, Dĩ An, Bình Dương",
+        "phone": "0947 947 168",
+        "hours": "8:00 – 21:00",
+        "mapUrl": "https://www.google.com/maps/place/G+-+Barbershop+3/@10.8861269,106.7626899,15z/data=!4m10!1m2!2m1!1sg+barber!3m6!1s0x3174d9f70ca07f85:0xdcab958ebf644617!8m2!3d10.8749745!4d106.8079766!15sCghnIGJhcmJlcloKIghnIGJhcmJlcpIBC2JhcmJlcl9zaG9wmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0a1FsSlZlSFZTUnpWb1VWaGplazFXU210TmEwNXJURlZHZW1KdFl4QULgAQD6AQQIABBD!16s%2Fg%2F11wnn18lk4?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D",
+        "image": "/assets/branches/cn3.jpg"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Sẵn Sàng Thay Đổi?",
+    "description": "Đến G - Barbershop để trải nghiệm dịch vụ cắt tóc nam chuyên nghiệp. Đội ngũ thợ giàu kinh nghiệm sẵn sàng phục vụ bạn.",
+    "ctaText": "ĐẶT LỊCH",
+    "ctaUrl": "/lien-he",
+    "backgroundImage": "/images/cta-bg.jpg"
+  }
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:22px; background:var(--bg-primary); font-family:var(--font-body); }
+  .grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; align-items:end; }
+  .sw { display:flex; flex-direction:column; gap:8px; }
+  .chip { aspect-ratio: 1/1; border-radius:50%; border:1px solid var(--border); }
+  .name { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--text-primary); }
+  .hex  { font-family:"JetBrains Mono",monospace; font-size:10px; color:var(--text-muted); }
+  .row { display:flex; align-items:center; gap:14px; margin-top:14px; padding:10px 14px; background:#fff; border:1px solid var(--border); border-radius:10px; }
+  .pip { width:18px; height:18px; border-radius:50%; }
+  .label { font-size:11px; color:var(--text-secondary); letter-spacing:.04em; }
+</style></head>
+<body>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:#7f1d1d"></div><div class="name">dark</div><div class="hex">#7f1d1d</div></div>
+    <div class="sw"><div class="chip" style="background:#991b1b"></div><div class="name">hover</div><div class="hex">#991b1b</div></div>
+    <div class="sw"><div class="chip" style="background:#b91c1c;box-shadow:0 8px 24px rgba(185,28,28,0.35)"></div><div class="name accent">accent</div><div class="hex">#b91c1c · signature</div></div>
+    <div class="sw"><div class="chip" style="background:rgba(185,28,28,0.09);border-color:rgba(185,28,28,.18)"></div><div class="name">light</div><div class="hex">rgba 0.09</div></div>
+    <div class="sw"><div class="chip" style="background:#C49A2A"></div><div class="name">gold</div><div class="hex">#C49A2A · stars</div></div>
+  </div>
+  <div class="row">
+    <span class="pip" style="background:#b91c1c"></span>
+    <span class="label">All interactive signals route through one hue — buttons, eyebrows, link underlines, dots.</span>
+  </div>
+</body></html>
