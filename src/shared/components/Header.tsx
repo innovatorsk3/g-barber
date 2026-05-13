@@ -26,7 +26,7 @@ export const Header = () => {
             <Menu size={22}/>
           </button>
           <Link to="/" className="flex items-center gap-2.5">
-            <img src="/assets/logo/logo_g.png" alt="G" className="h-10 sm:h-11 w-auto invert brightness-0"/>
+            <img src="/assets/logo/logo_g.png" alt="G" className="h-14 sm:h-16 w-auto invert brightness-0"/>
             <span className="hidden sm:inline-flex font-display text-[20px] tracking-[0.06em]">
               <span className="text-brand font-semibold">G</span>
               <span className="text-zinc-300 font-normal"> · Barbershop</span>
