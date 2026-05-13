@@ -1,0 +1,116 @@
+{
+  "stats": [
+    { "n": "7",        "l": "Nhóm dịch vụ" },
+    { "n": "20K–800K", "l": "Tầm giá"      },
+    { "n": "3",        "l": "Chi nhánh"     }
+  ],
+  "services": [
+    {
+      "tag": "Phổ biến nhất",
+      "name": "Cắt – Xả – Tạo Kiểu",
+      "price": "40K – 100K",
+      "time": "45'",
+      "img": "assets/gallery/3.jpg",
+      "desc": "Dịch vụ cắt tóc chính của G — bao gồm gội đầu thư giãn và tạo kiểu hoàn thiện. Nhiều mức giá linh hoạt theo đối tượng.",
+      "includes": [
+        "Combo tiêu chuẩn: 60K",
+        "Combo SV năm 1: 40K",
+        "Combo SV năm 2: 50K",
+        "Cắt HS Cấp 1: 50K",
+        "Cắt trẻ em: 20 – 30K",
+        "Gói Phục Hồi: 100K"
+      ]
+    },
+    {
+      "tag": "Định hình",
+      "name": "Uốn Tóc",
+      "price": "250K – 600K",
+      "time": "90 – 120'",
+      "img": "assets/gallery/5.jpg",
+      "desc": "Uốn gợn tự nhiên, uốn xoăn cá tính, định hình lọn bền lâu. Hai gói: thường và tốt + phục hồi.",
+      "includes": [
+        "SidePart / Layer (gói thường): 250K",
+        "Curlys Hair / Textured (gói thường): 300K",
+        "Rufled / CurlyS (gói thường): 350K",
+        "Buddha Perm (gói thường): 500K",
+        "Premlock (gói thường): 550K",
+        "Gói Tốt + Phục Hồi: cộng thêm 50K"
+      ]
+    },
+    {
+      "tag": "Màu sắc",
+      "name": "Nhuộm Tóc",
+      "price": "100K – 500K",
+      "time": "60 – 90'",
+      "img": "assets/gallery/6.jpg",
+      "desc": "Nhuộm phủ bạc, nhuộm thời trang, nâng tông — sử dụng thuốc nhuộm cao cấp ít amoniac, dưỡng tóc đi kèm.",
+      "includes": [
+        "Nhuộm đen tóc bạc: 100K",
+        "Nhuộm đen tóc màu: 150K",
+        "Nhuộm 1 lần (gói thường): 250K",
+        "Nâng tông + nhuộm (gói thường): 450K",
+        "Nhuộm 1 lần (gói tốt + PH): 300K",
+        "Nâng tông + nhuộm (gói tốt + PH): 500K"
+      ]
+    },
+    {
+      "tag": "Nâng tone",
+      "name": "Tẩy Tóc",
+      "price": "450K – 800K",
+      "time": "90 – 150'",
+      "img": "assets/gallery/4.jpg",
+      "desc": "Tẩy 1 hoặc 2 lần để chuẩn bị nhuộm màu sáng, bạch kim. Quy trình chuyên nghiệp, bảo vệ tóc tối đa.",
+      "includes": [
+        "Tẩy 1 lần + Nhuộm: 450K",
+        "Tẩy 2 lần + Nhuộm: 600K",
+        "Tẩy + Nhuộm Bạch Kim: 650 – 800K",
+        "Tẩy nối 1 lần + Nhuộm: 550K",
+        "Tẩy nối 2 lần + Nhuộm: 750K"
+      ]
+    },
+    {
+      "tag": "Làm mượt",
+      "name": "Duỗi Tóc",
+      "price": "70K – 450K",
+      "time": "60 – 90'",
+      "img": "assets/branches/cn2.jpg",
+      "desc": "Duỗi thẳng, duỗi tóc uốn, cup setting — giúp tóc mượt mà, dễ tạo kiểu mỗi ngày.",
+      "includes": [
+        "Duỗi tóc uốn: 70K",
+        "Duỗi thường: 350K",
+        "Duỗi Cup Setting: 450K"
+      ]
+    },
+    {
+      "tag": "Tạo nếp",
+      "name": "Ép Side",
+      "price": "100K – 250K",
+      "time": "30 – 45'",
+      "img": "assets/branches/cn3.jpg",
+      "desc": "Ép side, ép ngoi, ép gáy — tạo nếp chính xác cho phần tóc bên và gáy. Add-on phổ biến sau cắt.",
+      "includes": [
+        "Ép Side: 250K",
+        "Ép ngoi: 100K",
+        "Ép Gáy: 150K"
+      ]
+    },
+    {
+      "tag": "Chăm sóc",
+      "name": "Dịch Vụ Chăm Sóc",
+      "price": "20K – 50K",
+      "time": "15 – 30'",
+      "img": "assets/branches/cn1.jpg",
+      "desc": "Các dịch vụ chăm sóc da mặt và vệ sinh cơ bản — cao mặt truyền thống, lột mụn, làm sạch tai.",
+      "includes": [
+        "Cao mặt: 20K",
+        "Lột mụn: 30K",
+        "Ráy tai: 40 – 50K"
+      ]
+    }
+  ],
+  "faq": [
+    { "k": "Có cần đặt lịch?",  "v": "Có thể walk-in nhưng cuối tuần thường kín. Gọi hoặc Zalo 0947 947 168 để đặt chỗ trước." },
+    { "k": "Thanh toán?",        "v": "Tiền mặt, chuyển khoản, thẻ ATM/Visa. Có chương trình membership tích điểm." },
+    { "k": "Bảo hành dịch vụ?", "v": "Cắt — không vừa ý quay lại sửa miễn phí trong 7 ngày. Nhuộm bảo hành màu 4 tuần." }
+  ]
+}

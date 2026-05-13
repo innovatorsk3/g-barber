@@ -1,0 +1,26 @@
+{
+  "categories": ["Tất cả", "Pomade & Wax", "Dầu gội", "Dao cạo", "Phụ kiện"],
+  "promoStats": [
+    { "n": "100%",     "l": "Chính hãng"             },
+    { "n": "3",        "l": "Chi nhánh"               },
+    { "n": "Miễn phí", "l": "Tư vấn chọn sản phẩm"  }
+  ],
+  "products": [
+    { "cat": "Pomade & Wax", "name": "G Signature Pomade",     "sub": "Strong hold · matte finish · 100g",   "price": "289K", "old": "349K", "tag": "Best seller", "img": "assets/gallery/3.jpg"    },
+    { "cat": "Pomade & Wax", "name": "G Classic Wax",          "sub": "Medium hold · natural shine · 80g",   "price": "229K",               "tag": null,          "img": "assets/gallery/4.jpg"    },
+    { "cat": "Dầu gội",      "name": "Charcoal Shampoo",       "sub": "Than hoạt tính · 250ml · sạch sâu",   "price": "199K",               "tag": null,          "img": "assets/gallery/5.jpg"    },
+    { "cat": "Dầu gội",      "name": "Daily Care Shampoo",     "sub": "Bồ kết + biotin · 250ml",             "price": "179K",               "tag": "Mới",         "img": "assets/gallery/6.jpg"    },
+    { "cat": "Dao cạo",      "name": "G Straight Razor",       "sub": "Inox 440C · cán gỗ ép · tặng dao gập","price": "659K",               "tag": null,          "img": "assets/branches/cn1.jpg" },
+    { "cat": "Dao cạo",      "name": "Safety Razor Set",       "sub": "Chrome + 10 lưỡi · hộp da PU",        "price": "489K",               "tag": null,          "img": "assets/branches/cn2.jpg" },
+    { "cat": "Phụ kiện",     "name": "Lược Sừng Trâu",         "sub": "Handmade Việt Nam · 14cm",             "price": "129K",               "tag": null,          "img": "assets/team/1.jpg"       },
+    { "cat": "Phụ kiện",     "name": "Bộ Khăn Đắp Nóng-Lạnh", "sub": "Cotton 100% · gói 2 chiếc",            "price": "99K",                "tag": null,          "img": "assets/team/2.jpg"       }
+  ],
+  "bundle": {
+    "name": "Sản Phẩm G",
+    "sub": "dùng chính tại tiệm",
+    "price": "Có tại 3 chi nhánh G-Barbershop",
+    "oldPrice": "",
+    "desc": "Tất cả sản phẩm trong G-Store đều được đội ngũ barber tuyển chọn và sử dụng thực tế tại tiệm. Ghé tiệm hoặc gọi để được tư vấn sản phẩm phù hợp với loại tóc của bạn.",
+    "img": "assets/gallery/4.jpg"
+  }
+}

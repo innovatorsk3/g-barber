@@ -1,37 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# G-Barbershop v2
 
-## Getting Started
+Website chính thức của hệ thống G-Barbershop — 3 chi nhánh tại Bình Dương và TP.HCM.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **React 18** + **Vite** — không phải Next.js, dù project gốc khởi tạo từ CNA
+- **React Router DOM** — client-side routing
+- **TailwindCSS** — styling, custom design tokens (brand color, font-display)
+- **TypeScript** — phần lớn file dùng `@ts-nocheck` tạm thời
+- Không có component library bên ngoài (không antd, không shadcn) — custom components toàn bộ
+
+## Cấu trúc
+
+```
+src/
+  main.tsx                 ← routes
+  layouts/RootLayout.tsx   ← Header + Footer + Outlet
+  shared/
+    components/            ← Btn, PageHero, SectionLabel, Eyebrow, Header, Footer, BottomNav
+    constants/nav.ts       ← navigation config
+    icons/                 ← custom SVG icons
+  modules/
+    home/                  ← trang chủ
+    services/              ← bảng giá & dịch vụ
+    store/                 ← catalog sản phẩm (hiển thị, chưa có e-commerce)
+    about/                 ← tiểu sử & hành trình phát triển
+    academy/               ← đào tạo barber
+    careers/               ← tuyển dụng
+public/
+  assets/
+    price/price.jpg        ← bảng giá chính thức (nguồn sự thật cho pricing)
+    gallery/               ← ảnh dịch vụ
+    branches/              ← ảnh chi nhánh
+    team/                  ← ảnh team
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Path              | Module   |
+|-------------------|----------|
+| `/`               | Home     |
+| `/dich-vu`        | Services |
+| `/store`          | Store    |
+| `/ve-chung-toi`   | About    |
+| `/academy`        | Academy  |
+| `/tuyen-dung`     | Careers  |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Dev
 
-## Learn More
+```bash
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Lưu ý quan trọng
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Bảng giá**: Nguồn chính xác là `public/assets/price/price.jpg`. File `services/data/services.json` đã được đồng bộ theo ảnh này. Nếu giá thay đổi, cập nhật cả hai.
+- **Store**: Hiện tại chỉ là catalog — chưa có e-commerce. Các nút "Liên hệ" đều link đến `tel:0947947168`.
+- **Đặt lịch**: Chưa có hệ thống booking online. Tất cả CTA đặt lịch đều gọi điện trực tiếp.
+- **shadcn/antd**: Chưa cần — sẽ xem xét khi có usecase cụ thể (modal, datepicker, form phức tạp).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Chi nhánh
 
-## Deploy on Vercel
+| # | Địa chỉ | Khai trương |
+|---|---------|------------|
+| 1 | 135 Lương Đình Của, Đông Hoà, Dĩ An | 2021 |
+| 2 | 43 Đường Số 8, Linh Xuân, Thủ Đức | 2023 |
+| 3 | 10/5 Nguyễn Hiền, Đông Hòa, Dĩ An | 2024 |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# g-barber
+**Hotline:** 0947 947 168

@@ -1,0 +1,34 @@
+{
+  "gateways": [
+    { "kicker": "01", "title": "Dịch Vụ",    "desc": "Cắt, Uốn, Nhuộm, Tẩy — chuyên sâu.",      "to": "/dich-vu",    "img": "/assets/gallery/3.jpg",    "iconKey": "scissor" },
+    { "kicker": "02", "title": "G - Store",  "desc": "Sáp, dầu gội & phụ kiện chăm sóc tóc.",   "to": "/store",      "img": "/assets/gallery/5.jpg",    "iconKey": "bottle"  },
+    { "kicker": "03", "title": "G - Academy","desc": "Lớp đào tạo Barber chuyên nghiệp.",         "to": "/academy",    "img": "/assets/team/2.jpg",       "iconKey": "cap"     },
+    { "kicker": "04", "title": "Tuyển Dụng", "desc": "Gia nhập đội ngũ G - Barbershop.",          "to": "/tuyen-dung", "img": "/assets/branches/cn2.jpg", "iconKey": "hands"   }
+  ],
+  "featured": [
+    { "name": "Combo Cắt-Xả-Tạo Kiểu",     "tag": "Best seller", "price": "từ 40K",  "blurb": "Cắt tóc chuẩn form · Gội xả · Tạo kiểu sáp nhẹ.",       "img": "/assets/gallery/3.jpg" },
+    { "name": "Uốn Premlock / Buddha Perm", "tag": "Signature",   "price": "từ 500K", "blurb": "Lọn xoăn cá tính, giữ nếp 4–6 tháng.",                  "img": "/assets/gallery/5.jpg" },
+    { "name": "Nhuộm Bạch Kim",             "tag": "Premium",     "price": "từ 650K", "blurb": "Tẩy 2 lần + nhuộm + dưỡng phục hồi tại chỗ.",           "img": "/assets/gallery/6.jpg" }
+  ],
+  "usp": [
+    { "iconKey": "heart",   "title": "Thợ có Tâm & Tay Nghề Cao",        "desc": "Đào tạo bài bản, tỉ mỉ trong từng đường kéo." },
+    { "iconKey": "eye",     "title": "Giá Minh Bạch — Không Ép Giá",     "desc": "Bảng giá công khai trước khi cắt. Không phụ thu." },
+    { "iconKey": "sparkle", "title": "Không Gian Thoải Mái — Vibe Chill", "desc": "Decor ấm, nhạc đúng gu, cà phê miễn phí." }
+  ],
+  "team": [
+    { "name": "Master Minh",  "role": "Senior Barber",    "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&q=80" },
+    { "name": "Barber Hoàng", "role": "Head Stylist",     "img": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=480&q=80" },
+    { "name": "Barber Đức",   "role": "Color Specialist", "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=480&q=80" },
+    { "name": "Barber Tú",    "role": "Perm Expert",      "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=480&q=80" }
+  ],
+  "reviews": [
+    { "name": "Lê Thanh Tùng",  "text": "Không gian đẹp, thợ cắt tỉ mỉ. Không có gì để phàn nàn." },
+    { "name": "Nguyễn Hải Nam", "text": "Kiểu tóc ưng ý nhất. Chuyên nghiệp nhưng không \"công nghiệp\"." },
+    { "name": "Trần Minh Quân", "text": "Đi nhiều nơi nhưng chưa đâu tỉ mỉ như G - Barbershop." }
+  ],
+  "branches": [
+    { "id": 1, "name": "CS 1 · Lương Đình Của", "addr": "135 Lương Đình Của, Đông Hoà, Dĩ An, Bình Dương", "img": "/assets/branches/cn1.jpg" },
+    { "id": 2, "name": "CS 2 · Linh Xuân",      "addr": "43 Đường Số 8, Linh Xuân, Thủ Đức, TP.HCM",      "img": "/assets/branches/cn2.jpg" },
+    { "id": 3, "name": "CS 3 · Nguyễn Hiền",    "addr": "10/5 Nguyễn Hiền, Đông Hòa, Dĩ An, Bình Dương",  "img": "/assets/branches/cn3.jpg" }
+  ]
+}
