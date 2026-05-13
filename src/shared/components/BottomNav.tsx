@@ -35,11 +35,11 @@ export const BottomNav = () => {
             <span className="text-[9px] uppercase tracking-[0.1em] font-medium">{it.label}</span>
           </Link>
         ))}
-        <button onClick={handleBranches} className="flex flex-col items-center gap-1 px-3 py-1.5 transition-colors text-zinc-400">
+        <button type="button" onClick={handleBranches} className="flex flex-col items-center gap-1 px-3 py-1.5 transition-colors text-zinc-400">
           <Pin size={20}/>
           <span className="text-[9px] uppercase tracking-[0.1em] font-medium">C.Nhánh</span>
         </button>
-        <button onClick={handleCall} aria-label="Call" className="absolute right-1 -top-5 w-12 h-12 rounded-full bg-brand text-white flex items-center justify-center shadow-brand-glow ring-4 ring-zinc-900">
+        <button type="button" onClick={handleCall} aria-label="Call" className="absolute right-1 -top-5 w-12 h-12 rounded-full bg-brand text-white flex items-center justify-center shadow-brand-glow ring-4 ring-zinc-900">
           <Phone size={16}/>
         </button>
       </div>
