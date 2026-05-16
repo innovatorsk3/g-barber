@@ -10,11 +10,15 @@ import Store from './modules/store'
 import Academy from './modules/academy'
 import Careers from './modules/careers'
 import About from './modules/about'
+import AdminPage from './modules/admin'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        {/* Admin — outside site layout, no header/footer */}
+        <Route path="/admin" element={<AdminPage />} />
+
         <Route element={<RootLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/dich-vu" element={<Services />} />
