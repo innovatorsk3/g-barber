@@ -10,12 +10,12 @@ export default function ReviewsSection() {
       <div className="absolute top-10 left-1/2 -translate-x-1/2 font-display text-[18rem] sm:text-[26rem] text-white/[0.03] leading-none pointer-events-none select-none">"</div>
       <div className="max-w-6xl mx-auto relative">
         <div className="text-center mb-12 sm:mb-14">
-          <SectionLabel center kicker="Khách Hàng Nói Về G" title={<>Đánh giá <span className="italic text-brand">thật</span>, từ khách thật.</>} />
+          <SectionLabel center kicker="Khách Hàng Nói Về G" title={<>Đánh giá <span className="italic text-gold">thật</span>, từ khách thật.</>} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           {data.reviews.map((r, i) => (
-            <figure key={r.name} className="relative p-6 sm:p-7 rounded-2xl bg-zinc-800/50 border border-white/[0.06] hover:border-brand/30 transition-all">
-              <div className="flex gap-0.5 text-brand mb-4">
+            <figure key={r.name} className="relative p-6 sm:p-7 rounded-2xl bg-zinc-800/50 border border-white/[0.06] hover:border-gold/30 transition-all">
+              <div className="flex gap-0.5 text-gold mb-4">
                 {[0, 1, 2, 3, 4].map(s => <Star key={s} size={14}/>)}
               </div>
               <blockquote className="font-display italic text-[1.05rem] sm:text-[1.15rem] text-zinc-100 leading-snug">"{r.text}"</blockquote>

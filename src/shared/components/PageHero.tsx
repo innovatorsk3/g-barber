@@ -7,7 +7,7 @@ export const PageHero = ({ kicker, title, body, img }: any) => (
     <div className="absolute inset-0">
       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${img})`, filter: 'grayscale(30%)' }}/>
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-950 via-zinc-950/75 to-zinc-900"/>
-      <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-brand/15 to-transparent mix-blend-screen"/>
+      <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-gold/15 to-transparent mix-blend-screen"/>
     </div>
     <div className="max-w-5xl mx-auto relative">
       <Eyebrow>{kicker}</Eyebrow>

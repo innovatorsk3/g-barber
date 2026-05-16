@@ -8,7 +8,7 @@ export default function ServiceFAQ() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
         {data.faq.map(f => (
           <div key={f.k}>
-            <div className="text-[10px] uppercase tracking-[0.28em] text-brand font-semibold mb-2.5">{f.k}</div>
+            <div className="text-[10px] uppercase tracking-[0.28em] text-gold font-semibold mb-2.5">{f.k}</div>
             <p className="text-sm text-zinc-300 leading-relaxed">{f.v}</p>
           </div>
         ))}

@@ -13,7 +13,7 @@ export default function AcademyCTA() {
         <div className="relative px-6 sm:px-12 py-12 sm:py-16 max-w-2xl">
           <Eyebrow>Khai giảng tháng 6 · Còn 8 chỗ</Eyebrow>
           <h3 className="mt-4 font-display text-3xl sm:text-5xl text-white leading-tight">
-            Bắt đầu sự nghiệp<span className="block italic font-light text-brand">Barber hôm nay</span>
+            Bắt đầu sự nghiệp<span className="block italic font-light text-gold">Barber hôm nay</span>
           </h3>
           <p className="mt-4 text-zinc-300 text-sm max-w-md">Đăng ký tư vấn miễn phí, nhận lộ trình học cá nhân hoá cho bạn.</p>
           <div className="mt-7 flex flex-wrap gap-3">

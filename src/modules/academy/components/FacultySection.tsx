@@ -10,7 +10,7 @@ export default function FacultySection() {
       <div className="max-w-6xl mx-auto">
         <SectionLabel
           kicker="Đội ngũ giảng viên"
-          title={<>Học từ <span className="italic font-light text-brand">Master Barber thực chiến</span></>}
+          title={<>Học từ <span className="italic font-light text-gold">Master Barber thực chiến</span></>}
           body="Giảng viên đều là Master Barber với hơn 10 năm kinh nghiệm tại các tiệm hàng đầu Sài Gòn."
         />
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
@@ -19,7 +19,7 @@ export default function FacultySection() {
               <div className="absolute inset-0 bg-cover bg-center transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105" style={{ backgroundImage: `url(${m.img})` }}/>
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/30 to-transparent"/>
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <div className="text-[9px] uppercase tracking-[0.22em] text-brand font-semibold">{m.role}</div>
+                <div className="text-[9px] uppercase tracking-[0.22em] text-gold font-semibold">{m.role}</div>
                 <h3 className="font-display text-base sm:text-lg text-white leading-tight mt-1">{m.name}</h3>
                 <p className="text-[11px] text-zinc-400 mt-0.5">{m.years} kinh nghiệm</p>
               </div>

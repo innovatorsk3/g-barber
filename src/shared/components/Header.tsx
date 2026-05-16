@@ -35,13 +35,13 @@ export const Header = () => {
           <nav className="hidden lg:flex items-center gap-9">
             {NAV.map(n => (
               <Link key={n.key} to={n.to}
-                className={`text-[11px] font-semibold tracking-[0.16em] uppercase transition-colors ${pathname === n.to ? 'text-brand' : 'text-zinc-300 hover:text-white'}`}>
+                className={`text-[11px] font-semibold tracking-[0.16em] uppercase transition-colors ${pathname === n.to ? 'text-gold' : 'text-zinc-300 hover:text-white'}`}>
                 {n.label}
               </Link>
             ))}
           </nav>
           <div className="flex items-center gap-3">
-            <a href="tel:0947947168" className="sm:hidden w-10 h-10 rounded-full bg-brand text-white flex items-center justify-center" aria-label="Call">
+            <a href="tel:0947947168" className="sm:hidden w-10 h-10 rounded-full bg-gold text-zinc-900 flex items-center justify-center" aria-label="Call">
               <Phone size={15}/>
             </a>
             <Btn as="button" size="sm" variant="primary" className="hidden sm:inline-flex" onClick={handleCall} icon={<Phone size={12}/>}>
@@ -60,7 +60,7 @@ export const Header = () => {
           <div className="flex-1 flex flex-col justify-center px-8 gap-1 pb-24">
             {NAV.map((n, i) => (
               <Link key={n.key} to={n.to} onClick={() => setOpen(false)}
-                className={`font-display text-[32px] py-3 transition-colors flex items-baseline gap-4 ${pathname === n.to ? 'text-brand' : 'text-zinc-100 hover:text-brand'}`}
+                className={`font-display text-[32px] py-3 transition-colors flex items-baseline gap-4 ${pathname === n.to ? 'text-gold' : 'text-zinc-100 hover:text-gold'}`}
                 style={{ animation: `fadeUp .5s cubic-bezier(.22,1,.36,1) ${0.1 + i * 0.06}s both` }}>
                 <span className="text-[10px] font-sans tracking-[0.28em] text-zinc-500">0{i + 1}</span>
                 {n.label}

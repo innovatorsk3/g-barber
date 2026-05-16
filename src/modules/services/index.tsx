@@ -12,7 +12,7 @@ export default function Services() {
     <>
       <PageHero
         kicker="Dịch vụ · Pricelist 2026"
-        title={<><span>Bảng Giá</span><span className="block italic font-light text-brand mt-1">Dịch Vụ G</span></>}
+        title={<><span>Bảng Giá</span><span className="block italic font-light text-gold mt-1">Dịch Vụ G</span></>}
         body="Mỗi dịch vụ tại G được thiết kế để mang đến không chỉ kiểu tóc đẹp — mà còn là trải nghiệm thư giãn, nam tính, chỉn chu. Mọi giá đã bao gồm gội đầu và tạo kiểu."
         img="assets/gallery/5.jpg"
       />
@@ -26,7 +26,7 @@ export default function Services() {
             <SectionLabel
               center
               kicker="Bảng Giá · Official 2026"
-              title={<>Bảng giá <span className="italic font-light text-brand">chính thức</span></>}
+              title={<>Bảng giá <span className="italic font-light text-gold">chính thức</span></>}
             />
           </div>
           <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
@@ -47,7 +47,7 @@ export default function Services() {
           <div className="mb-10 sm:mb-14">
             <SectionLabel
               kicker="Chi tiết dịch vụ"
-              title={<>Khám phá từng <span className="italic font-light text-brand">nhóm dịch vụ</span></>}
+              title={<>Khám phá từng <span className="italic font-light text-gold">nhóm dịch vụ</span></>}
               body="Bấm vào từng nhóm để xem chi tiết. Gọi 0947 947 168 để được tư vấn thêm."
             />
           </div>

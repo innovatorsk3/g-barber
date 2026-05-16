@@ -13,12 +13,12 @@ export default function JobsSection() {
     <section className="bg-zinc-900 border-y border-white/5 px-5 sm:px-8 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-10">
-          <SectionLabel kicker="Vị trí đang tuyển" title={<>5 vị trí <span className="italic font-light text-brand">đang mở</span></>}/>
+          <SectionLabel kicker="Vị trí đang tuyển" title={<>5 vị trí <span className="italic font-light text-gold">đang mở</span></>}/>
           <div className="flex flex-wrap gap-2">
             {depts.map(d => (
               <button key={d} onClick={() => setDept(d)}
                 className={`text-[10px] uppercase tracking-[0.18em] font-semibold px-4 py-2 rounded-full border transition-all ${
-                  dept === d ? 'bg-brand border-brand text-white' : 'border-white/10 text-zinc-400 hover:text-white hover:border-white/30'
+                  dept === d ? 'bg-gold border-gold text-white' : 'border-white/10 text-zinc-400 hover:text-white hover:border-white/30'
                 }`}>
                 {d}
               </button>

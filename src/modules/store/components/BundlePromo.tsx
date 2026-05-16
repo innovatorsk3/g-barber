@@ -8,7 +8,7 @@ export default function BundlePromo() {
   const b = data.bundle
   return (
     <section className="px-5 sm:px-8 pb-20">
-      <div className="max-w-6xl mx-auto relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand to-brand-800 border border-brand-700">
+      <div className="max-w-6xl mx-auto relative overflow-hidden rounded-3xl bg-gradient-to-br from-gold to-gold-800 border border-gold-700">
         <div className="absolute inset-0 bg-cover bg-center opacity-15 mix-blend-overlay" style={{ backgroundImage: `url(${b.img})` }}/>
         <div className="relative px-6 sm:px-12 py-12 sm:py-16 flex flex-col md:flex-row md:items-center gap-8">
           <div className="flex-1">

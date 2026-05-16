@@ -39,7 +39,7 @@ export default function TimelineSection() {
 
         {/* Opening */}
         <div className="max-w-2xl mb-20 sm:mb-28">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-brand mb-4">Hành trình · 2021 – nay</p>
+          <p className="text-[11px] uppercase tracking-[0.32em] text-gold mb-4">Hành trình · 2021 – nay</p>
           <h2 className="font-display font-medium text-4xl sm:text-5xl text-zinc-50 leading-[1.05]">
             Từ một chiếc ghế,
             <span className="block italic font-light text-zinc-400 mt-1">đến 3 chi nhánh.</span>
@@ -54,11 +54,11 @@ export default function TimelineSection() {
           {milestones.map((m, i) => {
             const textBlock = (
               <div key="text">
-                <div className="font-display text-[4.5rem] sm:text-[6rem] leading-none text-brand/15 select-none -mb-3">{m.year}</div>
-                <div className="w-10 h-px bg-brand mb-5" />
+                <div className="font-display text-[4.5rem] sm:text-[6rem] leading-none text-gold/15 select-none -mb-3">{m.year}</div>
+                <div className="w-10 h-px bg-gold mb-5" />
                 <h3 className="font-display text-2xl sm:text-3xl text-zinc-50 leading-tight">{m.title}</h3>
                 <div className="mt-2 flex items-start gap-2 text-[11px] uppercase tracking-[0.2em] text-zinc-500">
-                  <Pin size={11} className="text-brand flex-shrink-0 mt-0.5" />
+                  <Pin size={11} className="text-gold flex-shrink-0 mt-0.5" />
                   <span>{m.addr}</span>
                 </div>
                 <p className="mt-5 text-zinc-400 leading-relaxed text-[0.95rem]">{m.body}</p>
@@ -84,11 +84,11 @@ export default function TimelineSection() {
 
         {/* Mission */}
         <div className="mt-20 sm:mt-28 pt-14 border-t border-white/[0.06]">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-brand mb-8">Tinh thần · Mission</p>
+          <p className="text-[11px] uppercase tracking-[0.32em] text-gold mb-8">Tinh thần · Mission</p>
           <div className="grid sm:grid-cols-3 gap-6 sm:gap-8">
             {values.map((v) => (
               <div key={v} className="flex items-start gap-4">
-                <div className="w-0.5 h-14 bg-brand flex-shrink-0 rounded-full" />
+                <div className="w-0.5 h-14 bg-gold flex-shrink-0 rounded-full" />
                 <p className="text-zinc-200 text-lg font-medium leading-snug pt-1">{v}</p>
               </div>
             ))}
