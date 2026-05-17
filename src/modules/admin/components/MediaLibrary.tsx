@@ -85,7 +85,8 @@ export default function MediaLibrary({ adminPass, onBack }: Props) {
   }
 
   const copyUrl = (file: LibFile) => {
-    navigator.clipboard.writeText(window.location.origin + file.url)
+    const url = file.url.startsWith('http') ? file.url : window.location.origin + file.url
+    navigator.clipboard.writeText(url)
     setCopied(file.key)
     setTimeout(() => setCopied(null), 2000)
   }

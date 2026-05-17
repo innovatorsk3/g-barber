@@ -13,9 +13,9 @@ export default function FeaturedSection() {
   const [overrides, setOverrides] = useState<Record<string, any>>({})
 
   useEffect(() => {
-    fetch('/uploads/content/featured.json')
+    fetch('/api/content?key=content/featured.json')
       .then(r => r.ok ? r.json() : null)
-      .then(json => { if (json) setOverrides(json) })
+      .then(json => { if (json?.data) setOverrides(json.data) })
       .catch(() => {})
   }, [])
 
