@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { useEffect, useState, useRef, useCallback } from 'react'
-import { useR2, type R2File } from '../useR2'
+import { useStorage, type MediaFile } from '../useStorage'
 import type { AdminPage, ImageSlot, PageSection, MetaField } from '../pages'
 
 interface QueueItem {
@@ -40,15 +40,15 @@ const DEFAULT_META: MetaField[] = [
 ]
 
 export default function PageDetail({ page, adminPass, onBack }: Props) {
-  const { listFolder, uploadFile, deleteFile, readContent, saveContent, busy } = useR2(adminPass)
+  const { listFolder, uploadFile, deleteFile, readContent, saveContent, busy } = useStorage(adminPass)
 
-  const [filesByFolder, setFilesByFolder] = useState<Record<string, R2File[]>>({})
+  const [filesByFolder, setFilesByFolder] = useState<Record<string, MediaFile[]>>({})
   const [loadingFiles, setLoadingFiles] = useState(true)
   const [queue, setQueue] = useState<QueueItem[]>([])
   const [uploading, setUploading] = useState(false)
   const [dragOverSection, setDragOverSection] = useState<string | null>(null)
   const [toast, setToast] = useState<{ type: 'ok' | 'err'; msg: string } | null>(null)
-  const [deleteTarget, setDeleteTarget] = useState<R2File | null>(null)
+  const [deleteTarget, setDeleteTarget] = useState<MediaFile | null>(null)
   const [copied, setCopied] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -67,7 +67,7 @@ export default function PageDetail({ page, adminPass, onBack }: Props) {
   const refresh = useCallback(async () => {
     setLoadingFiles(true)
     const results = await Promise.all(folders.map(f => listFolder(f)))
-    const map: Record<string, R2File[]> = {}
+    const map: Record<string, MediaFile[]> = {}
     folders.forEach((f, i) => { map[f] = results[i] })
     setFilesByFolder(map)
     setLoadingFiles(false)
@@ -91,7 +91,7 @@ export default function PageDetail({ page, adminPass, onBack }: Props) {
     setTimeout(() => setToast(null), 4000)
   }
 
-  const getSlotFile = (slot: ImageSlot): R2File | undefined =>
+  const getSlotFile = (slot: ImageSlot): MediaFile | undefined =>
     filesByFolder[slot.folder]?.find(f => f.name === slot.fileName)
 
   // ── Modal helpers ──────────────────────────────────────────────────────────
@@ -243,7 +243,7 @@ export default function PageDetail({ page, adminPass, onBack }: Props) {
     }
   }
 
-  const copyUrl = (file: R2File) => {
+  const copyUrl = (file: MediaFile) => {
     navigator.clipboard.writeText(file.url)
     setCopied(file.key)
     setTimeout(() => setCopied(null), 2000)

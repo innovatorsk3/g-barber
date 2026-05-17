@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import PageDetail from './components/PageDetail'
 import MediaLibrary from './components/MediaLibrary'
-import { useR2 } from './useR2'
+import { useStorage } from './useStorage'
 import { PAGES, type AdminPage } from './pages'
 
 const AUTH_KEY = 'gb_admin_pass'
@@ -12,7 +12,7 @@ function LoginScreen({ onLogin }: { onLogin: (p: string) => void }) {
   const [pass, setPass] = useState('')
   const [err, setErr] = useState('')
   const [loading, setLoading] = useState(false)
-  const { testAuth } = useR2(pass)
+  const { testAuth } = useStorage(pass)
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -144,7 +144,7 @@ function Dashboard({ adminPass, onLogout }: { adminPass: string; onLogout: () =>
     setView(id ? { type: 'page', id } : { type: 'overview' })
   const [counts, setCounts] = useState<Record<string, { done: number; total: number }>>({})
   const [loadingCounts, setLoadingCounts] = useState(true)
-  const { listFolder } = useR2(adminPass)
+  const { listFolder } = useStorage(adminPass)
 
   useEffect(() => {
     const load = async () => {

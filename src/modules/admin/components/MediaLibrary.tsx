@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { useEffect, useState, useCallback } from 'react'
-import { useR2 } from '../useR2'
+import { useStorage } from '../useStorage'
 
 interface LibFile {
   key: string
@@ -28,7 +28,7 @@ function formatDate(s: string) {
 }
 
 export default function MediaLibrary({ adminPass, onBack }: Props) {
-  const { deleteFile, busy } = useR2(adminPass)
+  const { deleteFile, busy } = useStorage(adminPass)
   const headers = { 'X-Admin-Pass': adminPass }
 
   const [files, setFiles] = useState<LibFile[]>([])

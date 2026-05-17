@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react'
 
-export interface R2File {
+export interface MediaFile {
   key: string
   name: string
   size: number
@@ -8,13 +8,13 @@ export interface R2File {
   url: string
 }
 
-export function useR2(adminPass: string) {
+export function useStorage(adminPass: string) {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   const headers = { 'X-Admin-Pass': adminPass }
 
-  const listFolder = useCallback(async (folder: string): Promise<R2File[]> => {
+  const listFolder = useCallback(async (folder: string): Promise<MediaFile[]> => {
     try {
       const res = await fetch(`/api/list?folder=${encodeURIComponent(folder)}`, { headers })
       if (!res.ok) return []
@@ -40,7 +40,7 @@ export function useR2(adminPass: string) {
 
       const res = await fetch('/api/upload', {
         method: 'POST',
-        headers, // no Content-Type — browser sets multipart boundary
+        headers,
         body: form,
       })
       const data = await res.json()
@@ -103,7 +103,6 @@ export function useR2(adminPass: string) {
     }
   }, [adminPass])
 
-  // Test auth — dùng khi login
   const testAuth = useCallback(async (): Promise<boolean> => {
     try {
       const res = await fetch('/api/list?folder=team', { headers })
