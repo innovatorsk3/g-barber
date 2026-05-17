@@ -201,7 +201,53 @@ function Dashboard() {
   )
 }
 
+const ADMIN_PASS = import.meta.env.VITE_ADMIN_PASS ?? 'Gbarber2026@'
+const SESSION_KEY = 'admin_auth'
+
+function LoginGate({ onAuth }: { onAuth: () => void }) {
+  const [input, setInput] = useState('')
+  const [error, setError] = useState(false)
+
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (input === ADMIN_PASS) {
+      sessionStorage.setItem(SESSION_KEY, '1')
+      onAuth()
+    } else {
+      setError(true)
+      setInput('')
+    }
+  }
+
+  return (
+    <div className="h-screen bg-zinc-950 flex items-center justify-center">
+      <form onSubmit={submit} className="bg-zinc-900 border border-white/10 rounded-2xl p-8 w-full max-w-sm space-y-4">
+        <div className="text-center mb-2">
+          <p className="text-2xl mb-1">✂️</p>
+          <h1 className="text-white font-bold text-lg">G Admin</h1>
+          <p className="text-zinc-500 text-sm">Nhập mật khẩu để tiếp tục</p>
+        </div>
+        <input
+          type="password"
+          value={input}
+          onChange={e => { setInput(e.target.value); setError(false) }}
+          placeholder="Mật khẩu"
+          autoFocus
+          className="w-full bg-zinc-800 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-zinc-600 outline-none focus:border-yellow-400/50"
+        />
+        {error && <p className="text-red-400 text-sm text-center">Sai mật khẩu</p>}
+        <button type="submit" className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2.5 rounded-lg transition-colors">
+          Đăng nhập
+        </button>
+      </form>
+    </div>
+  )
+}
+
 // ─── Root ──────────────────────────────────────────────────
 export default function AdminPage() {
+  const [authed, setAuthed] = useState(() => sessionStorage.getItem(SESSION_KEY) === '1')
+
+  if (!authed) return <LoginGate onAuth={() => setAuthed(true)} />
   return <Dashboard />
 }
