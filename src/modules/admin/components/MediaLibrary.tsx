@@ -147,7 +147,7 @@ export default function MediaLibrary({ adminPass, onBack }: Props) {
 
       {/* Notice */}
       <div className="flex-shrink-0 mx-6 mt-3 px-3 py-2 bg-blue-950/50 border border-blue-800/40 rounded-xl text-[11px] text-blue-300/80 leading-relaxed">
-        ℹ️ Thư viện hiển thị tất cả ảnh đã upload lên Cloudinary. Xóa tại đây <strong>không ảnh hưởng website</strong> nếu website đang dùng ảnh từ thư mục <code className="font-mono text-blue-300">/assets/</code> tĩnh — chỉ ảnh upload qua Admin mới bị xóa.
+        ℹ️ Thư viện hiển thị tất cả ảnh đã upload lên R2. Xóa tại đây <strong>không ảnh hưởng website</strong> nếu website đang dùng ảnh từ thư mục <code className="font-mono text-blue-300">/assets/</code> tĩnh — chỉ ảnh upload qua Admin mới bị xóa.
       </div>
 
       {/* Grid */}
