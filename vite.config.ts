@@ -12,5 +12,9 @@ export default defineConfig({
   server: {
     port: 3002,
     host: true,
+    proxy: {
+      '/api': 'http://localhost:8787',
+      '/cdn': 'http://localhost:8787',
+    },
   },
 })

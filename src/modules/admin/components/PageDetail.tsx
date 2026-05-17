@@ -23,7 +23,6 @@ interface MetaModalState {
 
 interface Props {
   page: AdminPage
-  adminPass: string
   onBack: () => void
 }
 
@@ -39,8 +38,8 @@ const DEFAULT_META: MetaField[] = [
   { key: 'description', label: 'Mô tả',    placeholder: '', multiline: true },
 ]
 
-export default function PageDetail({ page, adminPass, onBack }: Props) {
-  const { listFolder, uploadFile, deleteFile, readContent, saveContent, busy } = useStorage(adminPass)
+export default function PageDetail({ page, onBack }: Props) {
+  const { listFolder, uploadFile, deleteFile, readContent, saveContent, busy } = useStorage()
 
   const [filesByFolder, setFilesByFolder] = useState<Record<string, MediaFile[]>>({})
   const [loadingFiles, setLoadingFiles] = useState(true)

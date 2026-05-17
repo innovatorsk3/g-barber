@@ -8,22 +8,20 @@ export interface MediaFile {
   url: string
 }
 
-export function useStorage(adminPass: string) {
+export function useStorage() {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  const headers = { 'X-Admin-Pass': adminPass }
-
   const listFolder = useCallback(async (folder: string): Promise<MediaFile[]> => {
     try {
-      const res = await fetch(`/api/list?folder=${encodeURIComponent(folder)}`, { headers })
+      const res = await fetch(`/api/list?folder=${encodeURIComponent(folder)}`)
       if (!res.ok) return []
       const { files } = await res.json()
       return files ?? []
     } catch {
       return []
     }
-  }, [adminPass])
+  }, [])
 
   const uploadFile = useCallback(async (
     folder: string,
@@ -38,11 +36,7 @@ export function useStorage(adminPass: string) {
       form.append('folder', folder)
       form.append('fileName', fileName)
 
-      const res = await fetch('/api/upload', {
-        method: 'POST',
-        headers,
-        body: form,
-      })
+      const res = await fetch('/api/upload', { method: 'POST', body: form })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error || 'Upload thất bại')
       return { ok: true, url: data.url }
@@ -52,7 +46,7 @@ export function useStorage(adminPass: string) {
     } finally {
       setBusy(false)
     }
-  }, [adminPass])
+  }, [])
 
   const deleteFile = useCallback(async (
     key: string,
@@ -62,7 +56,7 @@ export function useStorage(adminPass: string) {
     try {
       const res = await fetch('/api/delete', {
         method: 'DELETE',
-        headers: { ...headers, 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ key }),
       })
       if (!res.ok) throw new Error('Xóa thất bại')
@@ -73,25 +67,25 @@ export function useStorage(adminPass: string) {
     } finally {
       setBusy(false)
     }
-  }, [adminPass])
+  }, [])
 
   const readContent = useCallback(async (key: string): Promise<any | null> => {
     try {
-      const res = await fetch(`/api/content?key=${encodeURIComponent(key)}`, { headers })
+      const res = await fetch(`/api/content?key=${encodeURIComponent(key)}`)
       if (!res.ok) return null
       const { data } = await res.json()
       return data
     } catch {
       return null
     }
-  }, [adminPass])
+  }, [])
 
   const saveContent = useCallback(async (key: string, data: any): Promise<{ ok: boolean; error?: string }> => {
     setBusy(true)
     try {
       const res = await fetch('/api/content', {
         method: 'PUT',
-        headers: { ...headers, 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ key, data }),
       })
       if (!res.ok) throw new Error('Lưu thất bại')
@@ -101,16 +95,7 @@ export function useStorage(adminPass: string) {
     } finally {
       setBusy(false)
     }
-  }, [adminPass])
+  }, [])
 
-  const testAuth = useCallback(async (): Promise<boolean> => {
-    try {
-      const res = await fetch('/api/list?folder=team', { headers })
-      return res.status !== 401
-    } catch {
-      return false
-    }
-  }, [adminPass])
-
-  return { listFolder, uploadFile, deleteFile, readContent, saveContent, testAuth, busy, error }
+  return { listFolder, uploadFile, deleteFile, readContent, saveContent, busy, error }
 }

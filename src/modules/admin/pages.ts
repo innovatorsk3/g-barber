@@ -12,7 +12,7 @@ export interface ImageSlot {
   label: string
   note: string
   meta?: MetaField[]
-  staticPath?: string  // current production image path (shown when Cloudinary slot is empty)
+  staticPath?: string  // current production image path (shown when R2 slot is empty)
 }
 
 export interface PageSection {

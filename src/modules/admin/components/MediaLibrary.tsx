@@ -12,7 +12,6 @@ interface LibFile {
 }
 
 interface Props {
-  adminPass: string
   onBack: () => void
 }
 
@@ -27,9 +26,8 @@ function formatDate(s: string) {
   catch { return '' }
 }
 
-export default function MediaLibrary({ adminPass, onBack }: Props) {
-  const { deleteFile, busy } = useStorage(adminPass)
-  const headers = { 'X-Admin-Pass': adminPass }
+export default function MediaLibrary({ onBack }: Props) {
+  const { deleteFile, busy } = useStorage()
 
   const [files, setFiles] = useState<LibFile[]>([])
   const [loading, setLoading] = useState(true)
@@ -44,7 +42,7 @@ export default function MediaLibrary({ adminPass, onBack }: Props) {
   const load = useCallback(async () => {
     setLoading(true)
     try {
-      const res = await fetch('/api/list-all', { headers })
+      const res = await fetch('/api/list-all')
       const { files: data } = await res.json()
       setFiles(data ?? [])
     } catch {
@@ -52,7 +50,7 @@ export default function MediaLibrary({ adminPass, onBack }: Props) {
     } finally {
       setLoading(false)
     }
-  }, [adminPass])
+  }, [])
 
   useEffect(() => { load() }, [])
 

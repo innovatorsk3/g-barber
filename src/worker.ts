@@ -7,17 +7,6 @@
 // Secrets (wrangler secret put ADMIN_PASS):
 //   ADMIN_PASS = your-admin-password
 
-// ─── Auth ────────────────────────────────────────────────────────────────────
-
-function unauthorized() {
-  return Response.json({ error: 'Unauthorized' }, { status: 401 })
-}
-
-function checkAuth(request, env) {
-  const pass = request.headers.get('X-Admin-Pass')
-  return !!pass && pass === env.ADMIN_PASS
-}
-
 // ─── POST /api/upload ─────────────────────────────────────────────────────────
 
 async function handleUpload(request, env) {
@@ -158,20 +147,14 @@ export default {
       catch (e) { return new Response('Error', { status: 500 }) }
     }
 
-    // Public: GET /api/content (production website reads content JSON)
-    if (url.pathname === '/api/content' && request.method === 'GET') {
-      try { return await handleContent(request, env) }
-      catch (e) { return Response.json({ error: e.message }, { status: 500 }) }
-    }
-
-    // All other /api/* require admin auth
+    // API routes
     if (url.pathname.startsWith('/api/')) {
-      if (!checkAuth(request, env)) return unauthorized()
       try {
         if (url.pathname === '/api/upload'   && request.method === 'POST')   return await handleUpload(request, env)
         if (url.pathname === '/api/list'     && request.method === 'GET')    return await handleList(request, env)
         if (url.pathname === '/api/list-all' && request.method === 'GET')    return await handleListAll(env)
         if (url.pathname === '/api/delete'   && request.method === 'DELETE') return await handleDelete(request, env)
+        if (url.pathname === '/api/content'  && request.method === 'GET')    return await handleContent(request, env)
         if (url.pathname === '/api/content'  && request.method === 'PUT')    return await handleContent(request, env)
         return Response.json({ error: 'Not found' }, { status: 404 })
       } catch (e) {
