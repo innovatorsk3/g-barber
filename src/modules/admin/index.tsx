@@ -35,7 +35,7 @@ function LoginScreen({ onLogin }: { onLogin: (p: string) => void }) {
         <div className="text-center mb-8">
           <div className="text-6xl mb-4">✂️</div>
           <h1 className="text-3xl font-bold text-white tracking-tight">G Admin</h1>
-          <p className="text-zinc-500 text-sm mt-1.5">Quản lý nội dung · Cloudflare R2</p>
+          <p className="text-zinc-500 text-sm mt-1.5">Quản lý nội dung · Cloudinary</p>
         </div>
         <form onSubmit={submit} className="space-y-3">
           <input
@@ -196,7 +196,7 @@ function Dashboard({ adminPass, onLogout }: { adminPass: string; onLogout: () =>
             <>
               <span className="text-white font-semibold">✂️ G Admin</span>
               <span className="text-[10px] text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2 py-0.5 rounded-full font-medium hidden sm:inline">
-                ⚡ R2
+                ☁️ Cloudinary
               </span>
             </>
           )}
@@ -265,9 +265,9 @@ function Dashboard({ adminPass, onLogout }: { adminPass: string; onLogout: () =>
               </button>
 
               <div className="mt-4 p-4 bg-zinc-900/50 border border-white/8 rounded-2xl text-xs text-zinc-500 space-y-1">
-                <p>💡 <strong className="text-zinc-400">URL ảnh sau upload:</strong> <span className="font-mono">/uploads/[folder]/[tên-file].jpg</span></p>
+                <p>☁️ <strong className="text-zinc-400">Lưu trữ:</strong> Cloudinary CDN — tốc độ cao, tự tối ưu ảnh</p>
                 <p>⚡ Upload xong → live ngay, không cần rebuild site</p>
-                <p>🗑️ Xóa ảnh trong admin → xóa khỏi R2 ngay lập tức</p>
+                <p>🗑️ Xóa ảnh trong admin → xóa khỏi Cloudinary ngay lập tức</p>
               </div>
             </div>
           </div>
