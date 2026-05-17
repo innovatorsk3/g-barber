@@ -1,0 +1,14 @@
+name = "g-barber"
+compatibility_date = "2026-05-17"
+compatibility_flags = ["nodejs_compat"]
+main = "src/worker.ts"
+
+[build]
+command = "npm run build"
+
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"
+
+[observability]
+enabled = true
