@@ -142,7 +142,10 @@ export default function PageDetail({ page, adminPass, onBack }: Props) {
 
     setModalSaving(true)
     try {
-      const fileName = isNew ? modalFileName.trim() : metaModal.slot.fileName
+      const rawName = modalFileName.trim()
+      const fileName = isNew
+        ? rawName.replace(/[^a-z0-9._-]/gi, '-').toLowerCase()
+        : metaModal.slot.fileName
 
       // Upload image if a new one was picked
       if (metaModal.pendingFile) {
@@ -211,7 +214,8 @@ export default function PageDetail({ page, adminPass, onBack }: Props) {
     let doneCount = 0
     for (const item of pending) {
       updateQueueItem(item.id, { status: 'uploading' })
-      const { ok, error } = await uploadFile(item.targetFolder, item.fileName, item.file)
+      const sanitizedName = item.fileName.replace(/[^a-z0-9._-]/gi, '-').toLowerCase()
+      const { ok, error } = await uploadFile(item.targetFolder, sanitizedName, item.file)
       if (ok) {
         updateQueueItem(item.id, { status: 'done' })
         doneCount++
@@ -464,7 +468,7 @@ export default function PageDetail({ page, adminPass, onBack }: Props) {
                       <input
                         value={item.fileName}
                         onChange={e => setQueue(p => p.map(it => it.id === item.id
-                          ? { ...it, fileName: e.target.value.replace(/[^a-z0-9._-]/gi, '-').toLowerCase() }
+                          ? { ...it, fileName: e.target.value }
                           : it))}
                         disabled={item.status !== 'pending'}
                         className="w-full bg-zinc-900 border border-white/10 focus:border-yellow-400/50 rounded-lg px-2.5 py-1.5 text-xs text-white font-mono focus:outline-none disabled:opacity-60"
@@ -610,11 +614,16 @@ export default function PageDetail({ page, adminPass, onBack }: Props) {
                     </label>
                     <input
                       value={modalFileName}
-                      onChange={e => setModalFileName(e.target.value.replace(/[^a-z0-9._-]/gi, '-').toLowerCase())}
+                      onChange={e => setModalFileName(e.target.value)}
                       placeholder="ten-anh.jpg"
                       className="w-full bg-zinc-800 border border-white/10 focus:border-yellow-400/60 rounded-xl px-3 py-2 text-sm text-white placeholder:text-zinc-600 font-mono focus:outline-none transition-colors"
                     />
-                    <p className="text-[10px] text-zinc-600 mt-1">Chỉ dùng chữ thường, số, dấu gạch ngang</p>
+                    {modalFileName && modalFileName !== modalFileName.replace(/[^a-z0-9._-]/gi, '-').toLowerCase() && (
+                      <p className="text-[10px] text-yellow-500/80 mt-1">
+                        Tên file sau khi lưu: <span className="font-mono">{modalFileName.replace(/[^a-z0-9._-]/gi, '-').toLowerCase()}</span>
+                      </p>
+                    )}
+                    <p className="text-[10px] text-zinc-600 mt-0.5">Chỉ dùng chữ thường, số, dấu gạch ngang</p>
                   </div>
                 )}
 
