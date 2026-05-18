@@ -3,8 +3,12 @@ import React from 'react'
 import { SectionLabel } from '@/shared/components/SectionLabel'
 import data from '../data/academy.json'
 
+const EXTRA_IMGS = [
+  { img: 'assets/academy/course-info.jpg',   caption: 'Không khí lớp học' },
+  { img: 'assets/academy/graduation.jpg', caption: 'Lễ trao chứng chỉ' },
+]
+
 export default function FacultySection() {
-  const members = [...data.faculty, data.faculty[0], data.faculty[1]]
   return (
     <section className="bg-zinc-900 border-y border-white/5 px-5 sm:px-8 py-16 sm:py-24">
       <div className="max-w-6xl mx-auto">
@@ -14,14 +18,26 @@ export default function FacultySection() {
           body="Giảng viên đều là Master Barber với hơn 10 năm kinh nghiệm tại các tiệm hàng đầu Sài Gòn."
         />
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
-          {members.map((m, i) => (
+          {/* Faculty cards */}
+          {data.faculty.map((m, i) => (
             <div key={i} className="group relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/[0.06]">
               <div className="absolute inset-0 bg-cover bg-center transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105" style={{ backgroundImage: `url(${m.img})` }}/>
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/30 to-transparent"/>
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <div className="text-[9px] uppercase tracking-[0.22em] text-gold font-semibold">{m.role}</div>
                 <h3 className="font-display text-base sm:text-lg text-white leading-tight mt-1">{m.name}</h3>
-                <p className="text-[11px] text-zinc-400 mt-0.5">{m.years} kinh nghiệm</p>
+                <p className="text-[11px] text-zinc-400 mt-0.5">{m.years} năm kinh nghiệm</p>
+              </div>
+            </div>
+          ))}
+
+          {/* Academy atmosphere images */}
+          {EXTRA_IMGS.map((item, i) => (
+            <div key={`extra-${i}`} className="group relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/[0.06]">
+              <div className="absolute inset-0 bg-cover bg-center transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105" style={{ backgroundImage: `url(${item.img})` }}/>
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent"/>
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <p className="text-[11px] text-zinc-400">{item.caption}</p>
               </div>
             </div>
           ))}

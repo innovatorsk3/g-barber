@@ -12,9 +12,9 @@ export default function Services() {
     <>
       <PageHero
         kicker="Dịch vụ · Pricelist 2026"
-        title={<><span>Bảng Giá</span><span className="block italic font-light text-gold mt-1">Dịch Vụ G</span></>}
+        title={<><span>Bảng Giá</span><span className="block italic font-light text-gold mt-1">Dịch Vụ <span className="text-brand">G</span></span></>}
         body="Mỗi dịch vụ tại G được thiết kế để mang đến không chỉ kiểu tóc đẹp — mà còn là trải nghiệm thư giãn, nam tính, chỉn chu. Mọi giá đã bao gồm gội đầu và tạo kiểu."
-        img="assets/gallery/5.jpg"
+        img="assets/gallery/uon-perm.jpg"
       />
 
       <ServiceStats />

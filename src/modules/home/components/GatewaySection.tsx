@@ -13,7 +13,7 @@ export default function GatewaySection() {
       <div className="absolute -top-1/3 -right-1/4 w-[600px] h-[600px] rounded-full bg-gold/[0.04] blur-3xl"/>
       <div className="max-w-7xl mx-auto relative">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 mb-12 sm:mb-16">
-          <SectionLabel kicker="Khám Phá · Explore" title={<>Tất cả về <span className="text-gold italic">G</span></>} />
+          <SectionLabel kicker="Khám Phá · Explore" title={<>Tất cả về <span className="text-brand italic">G</span></>} />
           <p className="text-zinc-400 text-[0.95rem] max-w-sm">Bốn lối vào — chọn một để bắt đầu hành trình.</p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">

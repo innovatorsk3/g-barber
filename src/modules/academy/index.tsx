@@ -3,7 +3,6 @@ import React from 'react'
 import { PageHero } from '@/shared/components/PageHero'
 import { SectionLabel } from '@/shared/components/SectionLabel'
 import CourseCard from './components/CourseCard'
-import FacultySection from './components/FacultySection'
 import ProcessSection from './components/ProcessSection'
 import AcademyCTA from './components/AcademyCTA'
 import data from './data/academy.json'
@@ -15,7 +14,7 @@ export default function Academy() {
         kicker="G Academy · Where barbers are made"
         title={<><span>Học</span><span className="italic font-light text-gold"> nghề Barber</span><span className="block">tại G.</span></>}
         body="Chương trình đào tạo Barber chuyên nghiệp, kết hợp 30% lý thuyết và 70% thực hành trên model thật. Tốt nghiệp có chứng chỉ G + cơ hội việc làm tại hệ thống."
-        img="assets/gallery/5.jpg"
+        img="assets/gallery/uon-perm.jpg"
       />
 
       <section className="px-5 sm:px-8 -mt-8 sm:-mt-10 relative z-10">
@@ -32,9 +31,9 @@ export default function Academy() {
       <section className="px-5 sm:px-8 py-16 sm:py-24">
         <div className="max-w-6xl mx-auto">
           <SectionLabel
-            kicker="Lộ trình"
-            title={<>3 cấp độ — <span className="italic font-light text-gold">từ con số 0 đến Master</span></>}
-            body="Chọn khoá phù hợp với trình độ và mục tiêu. Học viên có thể chuyển lên cấp cao hơn sau khi hoàn thành."
+            kicker="Khoá học"
+            title={<>Một khoá — <span className="italic font-light text-gold">trọn vẹn một hành trình</span></>}
+            body="Không chia cấp độ, không học mãi. Một lộ trình hoàn chỉnh từ căn bản đến tay nghề thực chiến — kết thúc với chứng chỉ và bộ đồ nghề trong tay."
           />
           <div className="mt-10 sm:mt-14 grid gap-5 sm:gap-6">
             {data.courses.map((c, i) => <CourseCard key={c.name} c={c} i={i}/>)}
@@ -42,7 +41,6 @@ export default function Academy() {
         </div>
       </section>
 
-      <FacultySection />
       <ProcessSection />
       <AcademyCTA />
     </>

@@ -1,8 +1,8 @@
 {
   "stats": [
-    { "n": "5",   "l": "Vị trí mở"  },
-    { "n": "3",   "l": "Chi nhánh"  },
-    { "n": "50+", "l": "Nhân viên"  }
+    { "n": "3",    "l": "Chi nhánh"          },
+    { "n": "50+",  "l": "Nhân viên"          },
+    { "n": "30M+", "l": "Thu nhập top barber" }
   ],
   "roles": [
     {

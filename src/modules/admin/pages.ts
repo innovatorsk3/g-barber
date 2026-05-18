@@ -66,7 +66,7 @@ export const PAGES: AdminPage[] = [
         contentKey: 'content/featured.json',
         slots: [
           {
-            key: 'feat-cat', fileName: 'cat-combo.jpg', folder: 'gallery', label: 'Cắt Combo', note: 'Haircut + Gội + Tạo kiểu', staticPath: '/assets/gallery/3.jpg',
+            key: 'feat-cat', fileName: 'cat-combo.jpg', folder: 'gallery', label: 'Cắt Combo', note: 'Haircut + Gội + Tạo kiểu', staticPath: '/assets/gallery/cat-combo.jpg',
             meta: [
               { key: 'name',  label: 'Tên dịch vụ', placeholder: 'Combo Cắt-Xả-Tạo Kiểu' },
               { key: 'tag',   label: 'Badge',        placeholder: 'Best seller' },
@@ -75,7 +75,7 @@ export const PAGES: AdminPage[] = [
             ],
           },
           {
-            key: 'feat-uon', fileName: 'uon-perm.jpg', folder: 'gallery', label: 'Uốn Perm', note: 'Buddha Perm / Premlock', staticPath: '/assets/gallery/5.jpg',
+            key: 'feat-uon', fileName: 'uon-perm.jpg', folder: 'gallery', label: 'Uốn Perm', note: 'Buddha Perm / Premlock', staticPath: '/assets/gallery/uon-perm.jpg',
             meta: [
               { key: 'name',  label: 'Tên dịch vụ', placeholder: 'Uốn Premlock / Buddha Perm' },
               { key: 'tag',   label: 'Badge',        placeholder: 'Signature' },
@@ -84,7 +84,7 @@ export const PAGES: AdminPage[] = [
             ],
           },
           {
-            key: 'feat-nhuom', fileName: 'nhuom-bach-kim.jpg', folder: 'gallery', label: 'Nhuộm', note: 'Nhuộm thời trang / bạch kim', staticPath: '/assets/gallery/6.jpg',
+            key: 'feat-nhuom', fileName: 'nhuom-bach-kim.jpg', folder: 'gallery', label: 'Nhuộm', note: 'Nhuộm thời trang / bạch kim', staticPath: '/assets/gallery/nhuom-bach-kim.jpg',
             meta: [
               { key: 'name',  label: 'Tên dịch vụ', placeholder: 'Nhuộm Bạch Kim' },
               { key: 'tag',   label: 'Badge',        placeholder: 'Premium' },
@@ -126,10 +126,10 @@ export const PAGES: AdminPage[] = [
         label: 'Ảnh 7 Nhóm Dịch Vụ',
         description: 'Mỗi nhóm dịch vụ cần 1 ảnh đại diện — kết quả thực tế, góc chụp đẹp.',
         slots: [
-          { key: 'svc-cat',    fileName: 'cat-combo.jpg',      folder: 'gallery', label: 'Cắt Combo',  note: 'Haircut + Gội + Tạo kiểu',       staticPath: '/assets/gallery/3.jpg' },
-          { key: 'svc-uon',    fileName: 'uon-perm.jpg',       folder: 'gallery', label: 'Uốn Perm',   note: 'Buddha Perm / Premlock',          staticPath: '/assets/gallery/5.jpg' },
-          { key: 'svc-nhuom',  fileName: 'nhuom-bach-kim.jpg', folder: 'gallery', label: 'Nhuộm',      note: 'Nhuộm thời trang / bạch kim',     staticPath: '/assets/gallery/6.jpg' },
-          { key: 'svc-tay',    fileName: 'tay-toc.jpg',        folder: 'gallery', label: 'Tẩy Tóc',    note: 'Bleaching — cần ảnh thật, KHÔNG dùng ảnh chi nhánh' },
+          { key: 'svc-cat',    fileName: 'cat-combo.jpg',      folder: 'gallery', label: 'Cắt Combo',  note: 'Haircut + Gội + Tạo kiểu',       staticPath: '/assets/gallery/cat-combo.jpg' },
+          { key: 'svc-uon',    fileName: 'uon-perm.jpg',       folder: 'gallery', label: 'Uốn Perm',   note: 'Buddha Perm / Premlock',          staticPath: '/assets/gallery/uon-perm.jpg' },
+          { key: 'svc-nhuom',  fileName: 'nhuom-bach-kim.jpg', folder: 'gallery', label: 'Nhuộm',      note: 'Nhuộm thời trang / bạch kim',     staticPath: '/assets/gallery/nhuom-bach-kim.jpg' },
+          { key: 'svc-tay',    fileName: 'tay-toc.jpg',        folder: 'gallery', label: 'Tẩy Tóc',    note: 'Bleaching', staticPath: 'assets/gallery/tay-toc.jpg' },
           { key: 'svc-duoi',   fileName: 'duoi-toc.jpg',       folder: 'gallery', label: 'Duỗi Tóc',   note: 'Straightening — KHÔNG dùng ảnh chi nhánh' },
           { key: 'svc-ep',     fileName: 'ep-side.jpg',        folder: 'gallery', label: 'Ép Side',    note: 'Side part / gáy — KHÔNG dùng ảnh chi nhánh' },
           { key: 'svc-cham',   fileName: 'cham-soc.jpg',       folder: 'gallery', label: 'Chăm Sóc',   note: 'Cao mặt / da mặt — KHÔNG dùng ảnh chi nhánh' },
@@ -182,12 +182,11 @@ export const PAGES: AdminPage[] = [
       },
       {
         id: 'courses',
-        label: 'Ảnh Khóa Học',
-        description: 'Ảnh không khí lớp học — học viên đang thực hành, thầy đang hướng dẫn.',
+        label: 'Ảnh Khoá Học',
+        description: 'Ảnh khoá học — 1 ảnh thông tin khoá (promo banner) và 1 ảnh tốt nghiệp (học viên nhận chứng chỉ).',
         slots: [
-          { key: 'class-basic',    fileName: 'class-basic.jpg',    folder: 'academy', label: 'Lớp Căn Bản',  note: 'Foundation — 6 tuần · học viên thực hành cơ bản' },
-          { key: 'class-advanced', fileName: 'class-advanced.jpg', folder: 'academy', label: 'Lớp Nâng Cao', note: 'Advanced — 8 tuần · thực hành skin fade' },
-          { key: 'class-master',   fileName: 'class-master.jpg',   folder: 'academy', label: 'Master Class',  note: 'Master — 12 tuần · thực tập tại tiệm' },
+          { key: 'class-info', fileName: 'course-info.jpg', folder: 'academy', label: 'Ảnh Thông Tin Khoá', note: 'Promo banner khoá học — landscape 4:3', staticPath: 'assets/academy/course-info.jpg' },
+          { key: 'class-cert', fileName: 'graduation.jpg', folder: 'academy', label: 'Ảnh Tốt Nghiệp',   note: 'Học viên nhận chứng chỉ — gần vuông',  staticPath: 'assets/academy/graduation.jpg' },
         ],
       },
     ],

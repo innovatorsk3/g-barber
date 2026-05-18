@@ -1,19 +1,19 @@
 {
   "gateways": [
-    { "kicker": "01", "title": "Dịch Vụ",    "desc": "Cắt, Uốn, Nhuộm, Tẩy — chuyên sâu.",      "to": "/dich-vu",    "img": "/assets/gallery/3.jpg",    "iconKey": "scissor" },
-    { "kicker": "02", "title": "G - Store",  "desc": "Sáp, dầu gội & phụ kiện chăm sóc tóc.",   "to": "/store",      "img": "/assets/gallery/5.jpg",    "iconKey": "bottle"  },
+    { "kicker": "01", "title": "Dịch Vụ",    "desc": "Cắt, Uốn, Nhuộm, Tẩy — chuyên sâu.",      "to": "/dich-vu",    "img": "/assets/gallery/cat-combo.jpg",    "iconKey": "scissor" },
+    { "kicker": "02", "title": "G - Store",  "desc": "Sáp, dầu gội & phụ kiện chăm sóc tóc.",   "to": "/store",      "img": "/assets/gallery/uon-perm.jpg",    "iconKey": "bottle"  },
     { "kicker": "03", "title": "G - Academy","desc": "Lớp đào tạo Barber chuyên nghiệp.",         "to": "/academy",    "img": "/assets/team/2.jpg",       "iconKey": "cap"     },
     { "kicker": "04", "title": "Tuyển Dụng", "desc": "Gia nhập đội ngũ G - Barbershop.",          "to": "/tuyen-dung", "img": "/assets/branches/cn2.jpg", "iconKey": "hands"   }
   ],
   "featured": [
-    { "name": "Combo Cắt-Xả-Tạo Kiểu",     "tag": "Best seller", "price": "từ 40K",  "blurb": "Cắt tóc chuẩn form · Gội xả · Tạo kiểu sáp nhẹ.",       "img": "/assets/gallery/3.jpg" },
-    { "name": "Uốn Premlock / Buddha Perm", "tag": "Signature",   "price": "từ 500K", "blurb": "Lọn xoăn cá tính, giữ nếp 4–6 tháng.",                  "img": "/assets/gallery/5.jpg" },
-    { "name": "Nhuộm Bạch Kim",             "tag": "Premium",     "price": "từ 650K", "blurb": "Tẩy 2 lần + nhuộm + dưỡng phục hồi tại chỗ.",           "img": "/assets/gallery/6.jpg" }
+    { "name": "Combo Cắt-Xả-Tạo Kiểu",     "tag": "Best seller", "price": "từ 40K",  "blurb": "Cắt tóc chuẩn form · Gội xả · Tạo kiểu sáp nhẹ.",       "img": "/assets/gallery/cat-combo.jpg" },
+    { "name": "Uốn Premlock / Buddha Perm", "tag": "Signature",   "price": "từ 500K", "blurb": "Lọn xoăn cá tính, giữ nếp 4–6 tháng.",                  "img": "/assets/gallery/uon-perm.jpg" },
+    { "name": "Nhuộm Bạch Kim",             "tag": "Premium",     "price": "từ 650K", "blurb": "Tẩy 2 lần + nhuộm + dưỡng phục hồi tại chỗ.",           "img": "/assets/gallery/nhuom-bach-kim.jpg" }
   ],
   "usp": [
     { "iconKey": "heart",   "title": "Thợ có Tâm & Tay Nghề Cao",        "desc": "Đào tạo bài bản, tỉ mỉ trong từng đường kéo." },
     { "iconKey": "eye",     "title": "Giá Minh Bạch — Không Ép Giá",     "desc": "Bảng giá công khai trước khi cắt. Không phụ thu." },
-    { "iconKey": "sparkle", "title": "Không Gian Thoải Mái — Vibe Chill", "desc": "Decor ấm, nhạc đúng gu, cà phê miễn phí." }
+    { "iconKey": "sparkle", "title": "Không Gian Thoải Mái — Vibe Chill", "desc": "Decor ấm, nhạc đúng gu" }
   ],
   "team": [
     { "name": "Master Minh",  "role": "Senior Barber",    "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&q=80" },

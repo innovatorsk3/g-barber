@@ -10,7 +10,7 @@
       "name": "Cắt – Xả – Tạo Kiểu",
       "price": "40K – 100K",
       "time": "45'",
-      "img": "assets/gallery/3.jpg",
+      "img": "assets/gallery/cat-combo.jpg",
       "desc": "Dịch vụ cắt tóc chính của G — bao gồm gội đầu thư giãn và tạo kiểu hoàn thiện. Nhiều mức giá linh hoạt theo đối tượng.",
       "includes": [
         "Combo tiêu chuẩn: 60K",
@@ -26,7 +26,7 @@
       "name": "Uốn Tóc",
       "price": "250K – 600K",
       "time": "90 – 120'",
-      "img": "assets/gallery/5.jpg",
+      "img": "assets/gallery/uon-perm.jpg",
       "desc": "Uốn gợn tự nhiên, uốn xoăn cá tính, định hình lọn bền lâu. Hai gói: thường và tốt + phục hồi.",
       "includes": [
         "SidePart / Layer (gói thường): 250K",
@@ -42,7 +42,7 @@
       "name": "Nhuộm Tóc",
       "price": "100K – 500K",
       "time": "60 – 90'",
-      "img": "assets/gallery/6.jpg",
+      "img": "assets/gallery/nhuom-bach-kim.jpg",
       "desc": "Nhuộm phủ bạc, nhuộm thời trang, nâng tông — sử dụng thuốc nhuộm cao cấp ít amoniac, dưỡng tóc đi kèm.",
       "includes": [
         "Nhuộm đen tóc bạc: 100K",
@@ -58,7 +58,7 @@
       "name": "Tẩy Tóc",
       "price": "450K – 800K",
       "time": "90 – 150'",
-      "img": "assets/gallery/4.jpg",
+      "img": "assets/gallery/tay-toc.jpg",
       "desc": "Tẩy 1 hoặc 2 lần để chuẩn bị nhuộm màu sáng, bạch kim. Quy trình chuyên nghiệp, bảo vệ tóc tối đa.",
       "includes": [
         "Tẩy 1 lần + Nhuộm: 450K",

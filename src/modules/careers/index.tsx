@@ -2,7 +2,6 @@
 import React from 'react'
 import { PageHero } from '@/shared/components/PageHero'
 import BenefitsSection from './components/BenefitsSection'
-import JobsSection from './components/JobsSection'
 import ApplicationForm from './components/ApplicationForm'
 import data from './data/careers.json'
 
@@ -11,7 +10,7 @@ export default function Careers() {
     <>
       <PageHero
         kicker="Tuyển dụng · Join the crew"
-        title={<><span>Trở thành</span><span className="block italic font-light text-gold">một phần của G.</span></>}
+        title={<><span>Trở thành</span><span className="block italic font-light text-gold">một phần của <span className="text-brand">G.</span></span></>}
         body="G đang tìm những người yêu nghề, có gu, sẵn sàng phát triển cùng một thương hiệu Barbershop hàng đầu. Lương tốt — môi trường tử tế — lộ trình rõ ràng."
         img="assets/team/1.jpg"
       />
@@ -28,7 +27,6 @@ export default function Careers() {
       </section>
 
       <BenefitsSection />
-      <JobsSection />
       <ApplicationForm />
     </>
   )

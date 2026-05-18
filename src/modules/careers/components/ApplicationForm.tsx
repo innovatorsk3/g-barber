@@ -3,7 +3,6 @@ import React from 'react'
 import { Btn } from '@/shared/components/Btn'
 import { SectionLabel } from '@/shared/components/SectionLabel'
 import { Upload, ArrowUR } from '@/shared/icons'
-import data from '../data/careers.json'
 
 export default function ApplicationForm() {
   const handleSubmit = (e: any) => {
@@ -14,8 +13,8 @@ export default function ApplicationForm() {
   return (
     <section id="apply" className="px-5 sm:px-8 py-16 sm:py-24">
       <div className="max-w-3xl mx-auto">
-        <SectionLabel center kicker="Ứng tuyển" title={<>Gửi CV cho <span className="italic font-light text-gold">G</span></>}
-          body="Hoặc gửi trực tiếp về gbarber.hcm@gmail.com — tiêu đề: [Vị trí ứng tuyển] - Họ tên."/>
+        <SectionLabel center kicker="Ứng tuyển" title={<>Gửi CV cho <span className="italic font-light text-brand">G</span></>}
+          body="Hiện tại chưa có vị trí mở cụ thể — nhưng nếu bạn có tay nghề và muốn được xem xét khi có nhu cầu, hãy để lại thông tin. Chúng tôi sẽ chủ động liên hệ."/>
         <form onSubmit={handleSubmit} className="mt-10 p-6 sm:p-8 rounded-2xl bg-zinc-800/50 border border-white/[0.06] space-y-5">
           <div className="grid sm:grid-cols-2 gap-5">
             <label className="block">
@@ -32,10 +31,8 @@ export default function ApplicationForm() {
             <input required type="email" className="mt-2 w-full h-11 px-4 bg-zinc-900 border border-white/10 rounded-lg text-white text-sm transition-all focus:outline-none focus:border-gold/50" placeholder="ban@email.com"/>
           </label>
           <label className="block">
-            <span className="text-[10px] uppercase tracking-[0.18em] text-zinc-400 font-semibold">Vị trí ứng tuyển</span>
-            <select className="mt-2 w-full h-11 px-4 bg-zinc-900 border border-white/10 rounded-lg text-white text-sm transition-all focus:outline-none focus:border-gold/50">
-              {data.roles.map(r => <option key={r.title}>{r.title}</option>)}
-            </select>
+            <span className="text-[10px] uppercase tracking-[0.18em] text-zinc-400 font-semibold">Bạn muốn làm vị trí gì?</span>
+            <input type="text" className="mt-2 w-full h-11 px-4 bg-zinc-900 border border-white/10 rounded-lg text-white text-sm transition-all focus:outline-none focus:border-gold/50" placeholder="VD: Barber, Lễ tân, Content Creator..."/>
           </label>
           <label className="block">
             <span className="text-[10px] uppercase tracking-[0.18em] text-zinc-400 font-semibold">Giới thiệu bản thân</span>

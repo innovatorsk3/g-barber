@@ -18,7 +18,7 @@ export default function Store() {
         kicker="G-Store · Curated for gents"
         title={<><span>Cửa hàng</span><span className="block italic font-light text-gold mt-1">tóc & râu</span></>}
         body="Bộ sưu tập sản phẩm tóc, dao cạo, dầu gội được G tuyển chọn — dùng chính tại tiệm. Ghé tiệm hoặc hỏi barber của bạn để được tư vấn sản phẩm phù hợp."
-        img="assets/gallery/3.jpg"
+        img="assets/gallery/cat-combo.jpg"
       />
 
       <PromoStrip />
