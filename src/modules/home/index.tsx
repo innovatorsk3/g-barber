@@ -15,7 +15,7 @@ export default function Home() {
       <GatewaySection />
       <FeaturedSection />
       <WhySection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <ReviewsSection />
       <BranchesSection />
       <FinalCTA />

@@ -1,7 +1,7 @@
 {
   "gateways": [
-    { "kicker": "01", "title": "Dịch Vụ",    "desc": "Cắt, Uốn, Nhuộm, Tẩy — chuyên sâu.",      "to": "/dich-vu",    "img": "/assets/gallery/cat-combo.jpg",    "iconKey": "scissor" },
-    { "kicker": "02", "title": "G - Store",  "desc": "Sáp, dầu gội & phụ kiện chăm sóc tóc.",   "to": "/store",      "img": "/assets/gallery/uon-perm.jpg",    "iconKey": "bottle"  },
+    { "kicker": "01", "title": "Dịch Vụ",    "desc": "Cắt, Uốn, Nhuộm, Tẩy — chuyên sâu.",      "to": "/dich-vu",    "img": "/assets/gallery/barber-action-1.jpg", "iconKey": "scissor" },
+    { "kicker": "02", "title": "G - Store",  "desc": "Sáp, dầu gội & phụ kiện chăm sóc tóc.",   "to": "/store",      "img": "/assets/gallery/barber-action-2.jpg", "iconKey": "bottle"  },
     { "kicker": "03", "title": "G - Academy","desc": "Lớp đào tạo Barber chuyên nghiệp.",         "to": "/academy",    "img": "/assets/team/2.jpg",       "iconKey": "cap"     },
     { "kicker": "04", "title": "Tuyển Dụng", "desc": "Gia nhập đội ngũ G - Barbershop.",          "to": "/tuyen-dung", "img": "/assets/branches/cn2.jpg", "iconKey": "hands"   }
   ],

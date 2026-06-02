@@ -26,10 +26,7 @@ export default function GatewaySection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/55 to-zinc-950/20"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-gold/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
                 <div className="relative h-full p-4 sm:p-5 flex flex-col justify-between">
-                  <div className="flex items-start justify-between">
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-white/20 bg-white/5 backdrop-blur flex items-center justify-center text-zinc-100 group-hover:bg-gold group-hover:border-gold transition-all">
-                      {Icon && <Icon size={16}/>}
-                    </div>
+                  <div className="flex items-start justify-end">
                     <span className="font-display text-[11px] sm:text-xs italic text-zinc-500">{g.kicker}</span>
                   </div>
                   <div>

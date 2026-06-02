@@ -1,19 +1,15 @@
 {
-  "categories": ["Tất cả", "Pomade & Wax", "Dầu gội", "Dao cạo", "Phụ kiện"],
+  "categories": ["Tất cả", "Pomade & Wax", "Xịt & Gôm"],
   "promoStats": [
     { "n": "100%",     "l": "Chính hãng"             },
     { "n": "3",        "l": "Chi nhánh"               },
     { "n": "Miễn phí", "l": "Tư vấn chọn sản phẩm"  }
   ],
   "products": [
-    { "cat": "Pomade & Wax", "name": "G Signature Pomade",     "sub": "Strong hold · matte finish · 100g",   "price": "289K", "old": "349K", "tag": "Best seller", "img": "assets/gallery/cat-combo.jpg"    },
-    { "cat": "Pomade & Wax", "name": "G Classic Wax",          "sub": "Medium hold · natural shine · 80g",   "price": "229K",               "tag": null,          "img": "assets/gallery/uon-perm.jpg"    },
-    { "cat": "Dầu gội",      "name": "Charcoal Shampoo",       "sub": "Than hoạt tính · 250ml · sạch sâu",   "price": "199K",               "tag": null,          "img": "assets/gallery/uon-perm.jpg"    },
-    { "cat": "Dầu gội",      "name": "Daily Care Shampoo",     "sub": "Bồ kết + biotin · 250ml",             "price": "179K",               "tag": "Mới",         "img": "assets/gallery/nhuom-bach-kim.jpg"    },
-    { "cat": "Dao cạo",      "name": "G Straight Razor",       "sub": "Inox 440C · cán gỗ ép · tặng dao gập","price": "659K",               "tag": null,          "img": "assets/branches/cn1.jpg" },
-    { "cat": "Dao cạo",      "name": "Safety Razor Set",       "sub": "Chrome + 10 lưỡi · hộp da PU",        "price": "489K",               "tag": null,          "img": "assets/branches/cn2.jpg" },
-    { "cat": "Phụ kiện",     "name": "Lược Sừng Trâu",         "sub": "Handmade Việt Nam · 14cm",             "price": "129K",               "tag": null,          "img": "assets/team/1.jpg"       },
-    { "cat": "Phụ kiện",     "name": "Bộ Khăn Đắp Nóng-Lạnh", "sub": "Cotton 100% · gói 2 chiếc",            "price": "99K",                "tag": null,          "img": "assets/team/2.jpg"       }
+    { "cat": "Pomade & Wax", "name": "Sáp Clay",        "sub": "Giữ nếp chắc · matte finish · dành cho tóc mỏng",   "price": "200K", "old": null, "tag": "Best seller", "img": "assets/products/sap-clay.jpg"       },
+    { "cat": "Pomade & Wax", "name": "Pomade",           "sub": "Medium firm hold · vanilla & leather · 100g",        "price": "200K", "old": null, "tag": null,          "img": "assets/products/pomade.jpg"         },
+    { "cat": "Xịt & Gôm",   "name": "Xịt Tapo Phồng",  "sub": "Grooming tonic spray · tạo phồng tự nhiên · 50ml",   "price": "150K", "old": null, "tag": null,          "img": "assets/products/xit-tapo-phong.jpg" },
+    { "cat": "Xịt & Gôm",   "name": "Gôm Lớn",          "sub": "Hard hold hairspray · giữ nếp cứng · 600ml",         "price": "150K", "old": null, "tag": null,          "img": "assets/products/gom-lon.jpg"        }
   ],
   "bundle": {
     "name": "Sản Phẩm G",
@@ -21,6 +17,6 @@
     "price": "Có tại 3 chi nhánh G-Barbershop",
     "oldPrice": "",
     "desc": "Tất cả sản phẩm trong G-Store đều được đội ngũ barber tuyển chọn và sử dụng thực tế tại tiệm. Ghé tiệm hoặc gọi để được tư vấn sản phẩm phù hợp với loại tóc của bạn.",
-    "img": "assets/gallery/uon-perm.jpg"
+    "img": "assets/gallery/cat-combo.jpg"
   }
 }
